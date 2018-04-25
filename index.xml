@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KarlaJu</title>
-    <link>http://example.org/</link>
+    <link>/</link>
     <description>Recent content on KarlaJu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Apr 2018 13:01:58 -0500</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Contact</title>
-      <link>http://example.org/contact/</link>
+      <link>/contact/</link>
       <pubDate>Wed, 11 Apr 2018 13:01:58 -0500</pubDate>
       
-      <guid>http://example.org/contact/</guid>
+      <guid>/contact/</guid>
       <description>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
 Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>/about/</link>
       <pubDate>Wed, 11 Apr 2018 12:51:30 -0500</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>/about/</guid>
       <description>+++ date = &amp;ldquo;2016-11-05T21:05:33+05:30&amp;rdquo; title = &amp;ldquo;About me&amp;rdquo; +++
 An sincerity so extremity he additions. Her yet there truth merit. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.
 Received overcame oh sensible so at an. Formed do change merely to county it. Am separate contempt domestic to to oh. On relation my so addition branched.</description>
@@ -34,10 +34,10 @@ Received overcame oh sensible so at an. Formed do change merely to county it. Am
     
     <item>
       <title>Rust</title>
-      <link>http://example.org/post/rust/</link>
+      <link>/post/rust/</link>
       <pubDate>Wed, 11 Apr 2018 12:43:57 -0500</pubDate>
       
-      <guid>http://example.org/post/rust/</guid>
+      <guid>/post/rust/</guid>
       <description>&lt;p&gt;+++
 showonlyimage = true
 draft = false

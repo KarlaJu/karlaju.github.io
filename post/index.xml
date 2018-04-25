@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on KarlaJu</title>
-    <link>http://example.org/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on KarlaJu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Apr 2018 12:43:57 -0500</lastBuildDate>
     
-	<atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rust</title>
-      <link>http://example.org/post/rust/</link>
+      <link>/post/rust/</link>
       <pubDate>Wed, 11 Apr 2018 12:43:57 -0500</pubDate>
       
-      <guid>http://example.org/post/rust/</guid>
+      <guid>/post/rust/</guid>
       <description>&lt;p&gt;+++
 showonlyimage = true
 draft = false
