@@ -6,10 +6,32 @@
     <description>Recent content on KarlaJu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Apr 2018 13:01:58 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 05 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Advent Of Code</title>
+      <link>/post/advent/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/advent/</guid>
+      <description>Durante todo el mes de Abril y lo que lleva el mes de Mayo he resuelto problemas de la página Advent of Code el evento 2015.
+ Advent Of code 2015
+ Son acertijos de programación que se plantean de una forma muy divertida, como ayudar a Santa a poder entregar regalos en las casas o ayudarlo a extraer &amp;ldquo;AdventCoins&amp;rdquo;, las cuales estan basadas en Bitcoins.
+ Son 25 acertijos y cada uno tiene dos partes.</description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>/post/rust/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rust/</guid>
+      <description>Desde hace unos días he empezado a estudiar el lenguaje de programación Rust. Rust es un lenguaje de programación de sistemas, su desarrollador es Mozilla. Ha sido diseñado para ser concurrente y practico. Está inspirado en el lenguaje de programación C. Al ver la sintaxis de Rust, me costó un poco de trabajo entender un poco los conceptos de variables mutables e inmutables.
+ Porque las variables predeterminadas son inmutables, lo que significa que una vez que un valor está vinculado a una variable, no puede cambiar ese valor.</description>
+    </item>
     
     <item>
       <title>Contact</title>
@@ -28,16 +50,6 @@ Effects present letters inquiry no an removed or friends. Desire behind latter m
       
       <guid>/about/</guid>
       <description>Mi nombre es Karla y acabo de entrar a la empresa Making Devs, una empresa mentora y de desarrollo de software entre otras cosas, desde que estoy aquí me han apoyado mucho mis compañeros de trabajo, el ambiente me gusta mucho porque todos son muy solidarios, pienso que esto es un factor importante en cualquier empresa ya que tienes la confianza de preguntarle a cualquiera cómo resolver alguna duda que tengas.</description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>/post/rust/</link>
-      <pubDate>Wed, 11 Apr 2018 12:43:57 -0500</pubDate>
-      
-      <guid>/post/rust/</guid>
-      <description>Desde hace unos días he empezado a estudiar el lenguaje de programación Rust. Rust es un lenguaje de programación de sistemas, su desarrollador es Mozilla. Ha sido diseñado para ser concurrente y practico. Está inspirado en el lenguaje de programación C. Al ver la sintaxis de Rust, me costó un poco de trabajo entender un poco los conceptos de variables mutables e inmutables.
-Porque las variables predeterminadas son inmutables, lo que significa que una vez que un valor está vinculado a una variable, no puede cambiar ese valor.</description>
     </item>
     
   </channel>
