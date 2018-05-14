@@ -6,10 +6,19 @@
     <description>Recent content in Posts on KarlaJu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pruebas</title>
+      <link>/post/pruebas/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/pruebas/</guid>
+      <description>Pruebas en el desarrollo de software Dentro del desarrollo de software los errores existen en cualquier etapa del proyecto, aun cuando pensemos que nuestro código esta bien, existen ocasiones en las que no contemplamos bien el resultado de una validación y el resultado que esperamos no es el mismo que arroja. Algo importante en el desarrollo de nuestro proyecto es ocupar métodos que nos permitan tener más desglosado nuestro código para facilitarnos la aplicación de pruebas para así saber en dónde falla nuestro código.</description>
+    </item>
     
     <item>
       <title>Advent Of Code</title>
