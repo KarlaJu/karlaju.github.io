@@ -6,10 +6,19 @@
     <description>Recent content in Programming on KarlaJu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introducción a Rust</title>
+      <link>/post/introduccionarust/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/introduccionarust/</guid>
+      <description>Acercamiento a Rust Introducción Rust es un lenguaje de programación que trabaja con detalles de bajo nivel, representación de datos y concurrencia. Rust esta diseñado para desarrollar código confiable que sea eficiente en términos de velocidad y uso de memoria. Por ejemplo, al introducir el paralelismo en Rust resultará una operación de relativamente bajo riesgo: el compilador detectará los errores clásicos por nosotros. El control de bajo nivel y la ergonomía de alto nivel a menudo están peleados entre sí en el diseño de lenguaje de programación pero Rust desafía este problema.</description>
+    </item>
     
     <item>
       <title>Pruebas</title>
