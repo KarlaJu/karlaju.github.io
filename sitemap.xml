@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>/contact/</loc>
-    <lastmod>2018-04-11T13:01:58-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/about/</loc>
     <lastmod>2018-04-11T12:51:30-05:00</lastmod>
   </url>
@@ -52,6 +47,11 @@
   <url>
     <loc>/categories/programming/</loc>
     <lastmod>2018-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
     <priority>0</priority>
   </url>
   

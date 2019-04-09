@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KarlaJu</title>
+    <title>Karla Jurado</title>
     <link>/</link>
-    <description>Recent content on KarlaJu</description>
+    <description>Recent content on Karla Jurado</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zn-Hans</language>
     <lastBuildDate>Tue, 15 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,10 @@
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/introduccionarust/</guid>
-      <description>Acercamiento a Rust Introducción Rust es un lenguaje de programación que trabaja con detalles de bajo nivel, representación de datos y concurrencia. Rust esta diseñado para desarrollar código confiable que sea eficiente en términos de velocidad y uso de memoria. Por ejemplo, al introducir el paralelismo en Rust resultará una operación de relativamente bajo riesgo: el compilador detectará los errores clásicos por nosotros. El control de bajo nivel y la ergonomía de alto nivel a menudo están peleados entre sí en el diseño de lenguaje de programación pero Rust desafía este problema.</description>
+      <description>Acercamiento a Rust Introducción Rust es un lenguaje de programación que trabaja con detalles de bajo nivel, representación de datos y concurrencia. Rust esta diseñado para desarrollar código confiable que sea eficiente en términos de velocidad y uso de memoria. Por ejemplo, al introducir el paralelismo en Rust resultará una operación de relativamente bajo riesgo: el compilador detectará los errores clásicos por nosotros. El control de bajo nivel y la ergonomía de alto nivel a menudo están peleados entre sí en el diseño de lenguaje de programación pero Rust desafía este problema.
+Rust no se limita a la programación de sistemas de bajo nivel. Es lo suficiente ergonómico para hacer que las aplicaciones de CLI(command-line interface), y otros tipos de código sean bastante agradables de escribir.
+Rust también cuenta con herramientas de desarrollo de programación de sistemas: - Cargo: el administrador de dependencias incluido y la herramienta de compilación, facilita agregar, compilar y gestionar dependencias siendo coherente en todo el ecosistema de Rust. - Rustfmt que garantiza un estilo de codificación consistente entre los desarrolladores. - Rust Language Server potencia la integración IDE para completar el código y mensajes de error en línea.
+Ventaja para los desarrolladores  Rust es una herramienta productiva que te permite colaborar entre grandes equipos de desarrolladores con diferentes niveles de conocimiento de programación de sistemas.</description>
     </item>
     
     <item>
@@ -26,7 +29,10 @@
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/pruebas/</guid>
-      <description>Pruebas en el desarrollo de software Dentro del desarrollo de software los errores existen en cualquier etapa del proyecto, aun cuando pensemos que nuestro código esta bien, existen ocasiones en las que no contemplamos bien el resultado de una validación y el resultado que esperamos no es el mismo que arroja. Algo importante en el desarrollo de nuestro proyecto es ocupar métodos que nos permitan tener más desglosado nuestro código para facilitarnos la aplicación de pruebas para así saber en dónde falla nuestro código.</description>
+      <description>Pruebas en el desarrollo de software Dentro del desarrollo de software los errores existen en cualquier etapa del proyecto, aun cuando pensemos que nuestro código esta bien, existen ocasiones en las que no contemplamos bien el resultado de una validación y el resultado que esperamos no es el mismo que arroja. Algo importante en el desarrollo de nuestro proyecto es ocupar métodos que nos permitan tener más desglosado nuestro código para facilitarnos la aplicación de pruebas para así saber en dónde falla nuestro código. Otro aspecto importante por lo cual es importante realizar pruebas, es porque en ocasiones para compilar proyectos grandes se toman algunos minutos, y suponiendo que sean solo 3 o 4 minutos a la larga comprobar que la validación que acabas de realizar funciona, se vuelve muy cansado y los proyectos comienzan a alargarse en el tiempo.
+Para verlo un poco más claro explicaremos un pequeño ejemplo: &amp;gt;Tenemos unas cadenas de letras y queremos saber si tienen dos letras iguales juntas.
+Lo probaremos con estas cadenas para verificar si el programa funciona correctamente:
+ asdfgjwerpoq asdgmymdffdg   Comenzando con la prueba, crearemos la clase que nos permita ver si nuestro programa funciona. Crearemos métodos para probar cada cadena por separado.</description>
     </item>
     
     <item>
@@ -38,7 +44,10 @@
       <description>Durante todo el mes de Abril y lo que lleva el mes de Mayo he resuelto problemas de la página Advent of Code el evento 2015.
  Advent Of code 2015
  Son acertijos de programación que se plantean de una forma muy divertida, como ayudar a Santa a poder entregar regalos en las casas o ayudarlo a extraer &amp;ldquo;AdventCoins&amp;rdquo;, las cuales estan basadas en Bitcoins.
- Son 25 acertijos y cada uno tiene dos partes.</description>
+ Son 25 acertijos y cada uno tiene dos partes.
+ Las últimas dos semanas me costo trabajo realizar el ejercicio 5 porque lo desarrollé haciendo muchas validaciones, me causó problemas hacerlo con tantos if anidados. Pero pedí ayuda para poder resolverlo y un chico llamado Brandon me explicó algo llamado &amp;ldquo;Expresiones regulares&amp;rdquo;, y realizarlo en groovy fue muy sencillo realizar las busquedas que yo necesitaba para el problema 5.
+ Ahora para la parte dos, estoy estudiando más profundamente la expresiones regulares para poder buscar las coincidencias que necesito en la cadena.
+ </description>
     </item>
     
     <item>
@@ -48,17 +57,7 @@
       
       <guid>/post/rust/</guid>
       <description>Desde hace unos días he empezado a estudiar el lenguaje de programación Rust. Rust es un lenguaje de programación de sistemas, su desarrollador es Mozilla. Ha sido diseñado para ser concurrente y practico. Está inspirado en el lenguaje de programación C. Al ver la sintaxis de Rust, me costó un poco de trabajo entender un poco los conceptos de variables mutables e inmutables.
- Porque las variables predeterminadas son inmutables, lo que significa que una vez que un valor está vinculado a una variable, no puede cambiar ese valor.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>/contact/</link>
-      <pubDate>Wed, 11 Apr 2018 13:01:58 -0500</pubDate>
-      
-      <guid>/contact/</guid>
-      <description>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
-Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to.</description>
+ Porque las variables predeterminadas son inmutables, lo que significa que una vez que un valor está vinculado a una variable, no puede cambiar ese valor. Si no se le puede cambiar el valor a una variable se vuelve en una constante y por eso debemos hacer uso de la mutabilidad.</description>
     </item>
     
     <item>
@@ -67,7 +66,10 @@ Effects present letters inquiry no an removed or friends. Desire behind latter m
       <pubDate>Wed, 11 Apr 2018 12:51:30 -0500</pubDate>
       
       <guid>/about/</guid>
-      <description>Mi nombre es Karla y acabo de entrar a la empresa Making Devs, una empresa mentora y de desarrollo de software entre otras cosas, desde que estoy aquí me han apoyado mucho mis compañeros de trabajo, el ambiente me gusta mucho porque todos son muy solidarios, pienso que esto es un factor importante en cualquier empresa ya que tienes la confianza de preguntarle a cualquiera cómo resolver alguna duda que tengas.</description>
+      <description>Mi nombre es Karla Jurado soy parte de una empresa llamada Making Devs la cual es mentora y desarrolla software entre otras cosas.
+Desde mi ingreso he aprendido muchas cosas, Making Devs me ha apoyado y motivado para compartir el conocimiento que he adquirido.
+ Este blog esta hecho con la finalidad de ser una vía para compartir mis conocimientos de una forma sencilla.
+ </description>
     </item>
     
   </channel>
