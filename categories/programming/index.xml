@@ -24,18 +24,6 @@ Ventaja para los desarrolladores  Rust es una herramienta productiva que te perm
     </item>
     
     <item>
-      <title>Pruebas</title>
-      <link>/post/pruebas/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/pruebas/</guid>
-      <description>Pruebas en el desarrollo de software Dentro del desarrollo de software los errores existen en cualquier etapa del proyecto, aun cuando pensemos que nuestro código esta bien, existen ocasiones en las que no contemplamos bien el resultado de una validación y el resultado que esperamos no es el mismo que arroja. Algo importante en el desarrollo de nuestro proyecto es ocupar métodos que nos permitan tener más desglosado nuestro código para facilitarnos la aplicación de pruebas para así saber en dónde falla nuestro código. Otro aspecto importante por lo cual es importante realizar pruebas, es porque en ocasiones para compilar proyectos grandes se toman algunos minutos, y suponiendo que sean solo 3 o 4 minutos a la larga comprobar que la validación que acabas de realizar funciona, se vuelve muy cansado y los proyectos comienzan a alargarse en el tiempo.
-Para verlo un poco más claro explicaremos un pequeño ejemplo: &amp;gt;Tenemos unas cadenas de letras y queremos saber si tienen dos letras iguales juntas.
-Lo probaremos con estas cadenas para verificar si el programa funciona correctamente:
- asdfgjwerpoq asdgmymdffdg   Comenzando con la prueba, crearemos la clase que nos permita ver si nuestro programa funciona. Crearemos métodos para probar cada cadena por separado.</description>
-    </item>
-    
-    <item>
       <title>Advent Of Code</title>
       <link>/post/advent/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
@@ -58,6 +46,18 @@ Lo probaremos con estas cadenas para verificar si el programa funciona correctam
       <guid>/post/rust/</guid>
       <description>Desde hace unos días he empezado a estudiar el lenguaje de programación Rust. Rust es un lenguaje de programación de sistemas, su desarrollador es Mozilla. Ha sido diseñado para ser concurrente y practico. Está inspirado en el lenguaje de programación C. Al ver la sintaxis de Rust, me costó un poco de trabajo entender un poco los conceptos de variables mutables e inmutables.
  Porque las variables predeterminadas son inmutables, lo que significa que una vez que un valor está vinculado a una variable, no puede cambiar ese valor. Si no se le puede cambiar el valor a una variable se vuelve en una constante y por eso debemos hacer uso de la mutabilidad.</description>
+    </item>
+    
+    <item>
+      <title>Introducción a React Js</title>
+      <link>/post/react-intro/</link>
+      <pubDate>Tue, 09 Apr 2019 21:32:07 -0500</pubDate>
+      
+      <guid>/post/react-intro/</guid>
+      <description>¿Qué es?  Biblioteca para construir interfaces web Es la vista en MVC Sigle Page Application Sólo se encarga de la interfaz  ¿Por qué? Hacer más fácil la creación de interfaces web usando javascript
+Ventajas  Miestras escribes código podrás ver tus cambios Utiliza virtual Dom para refrescar la parte en la memoria que cambio Tiene/utiliza componentes  Componentes  API reusable Crea etiquetas HTML para reutilizar Reusable HTML, CSS, Javascript  Instalación  Instalar node.js Generador de proyectos   $ npm install -g create-react-app   Creación de la aplicación react   $ create-reat-app my-app   Entrar a la carpeta del proyecto   $ cd my-app   Levantar el proyecto   $ npm start  En el punto número cuatro al entrar a la carpeta del proyecto, aparecerá la siguiente estructura de archivos:
+my-app
+   Descripción    README.md  Documentación del proyecto   package.json Archivo que contiene el nombre, la version, dependencias del proyecto, etc.   package.lock.json Archivo generado para guardar las versiones del proyecto, este archivo no se toca   .gitignore Para la utilización de git   node_modules Se instalan los entornos js que se utilizarán para el proyecto   public Donde se colocan los archivos HTML   --- index.</description>
     </item>
     
   </channel>

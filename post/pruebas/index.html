@@ -252,7 +252,7 @@ Lo probaremos con estas cadenas para verificar si el programa funciona correctam
   <ul class="post-meta li-x">
     
       
-        <li><a href="/categories/programming"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> programming </a></li>
+        <li><a href="/categories/testing"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Testing </a></li>
       
     
     
@@ -297,10 +297,10 @@ Otro aspecto importante por lo cual es importante realizar pruebas, es porque en
 <p>Comenzando con la prueba, crearemos la clase que nos permita ver si nuestro programa funciona. Crearemos métodos para probar cada cadena por separado.</p>
 </blockquote>
 
-<pre><code>class ListExampleTest extends GroovyTestCase{	
+<pre><code>class ListExampleTest extends GroovyTestCase{
 
 	def lista = new ListExample()
-	
+
 	void testContainsAPairOfSameLetters(){
 		String text = &quot;asdfgjwerpoq&quot;
 		Integer result = lista.verifyIfIsANiceString(text)
@@ -312,7 +312,7 @@ Otro aspecto importante por lo cual es importante realizar pruebas, es porque en
 		Integer result = lista.verifyIfIsANiceString(text)
 		assert result == 1 //El uno significa que la cadena cumple
 	}
-	
+
 </code></pre>
 
 <p>Nuestro programa quedaría de la siguiente forma:</p>
@@ -329,7 +329,7 @@ Otro aspecto importante por lo cual es importante realizar pruebas, es porque en
 	def verifyIfTheStringContainsAPairOfLettersWhichRepeats(String line){
 		line.findAll(~/(.)\1/)
 	}
-   
+
    def validationEveryString(String line){
    	(verifyIfTheStringContainsAPairOfLettersWhichRepeats(line))? true :	false
    }

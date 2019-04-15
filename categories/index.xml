@@ -19,5 +19,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>React</title>
+      <link>/categories/react/</link>
+      <pubDate>Tue, 09 Apr 2019 21:32:07 -0500</pubDate>
+      
+      <guid>/categories/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>/categories/rust/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>/categories/testing/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/testing/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
