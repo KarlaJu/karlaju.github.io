@@ -492,6 +492,52 @@
               
                   <div class="post-wrapper white-bg post-card">
   
+  <a href="/post/swift-intro/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">Introducción a Swift</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>Oct 20, 2019</li>
+        
+    
+        
+          <li class="middot"></li>
+          <li>9 minutes read</li>
+        
+      </ul>
+    </div>
+    
+
+    
+      Introducción a Swift Variables La declaración de una variable, puede ser de dos formas:
+var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
+let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.
+ Tipos de datos Si no se le indica el tipo de dato a la variable, el compilador lo tomará de acuerdo a su valor.
+Entero El valor por defecto que tiene un entero es de 64 bits.
+var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow.
+ En este caso se genera un error en tiempo de ejecución, el compilador al usar ‘y’ y saber qué es de tipo Int8, le pone el mismo tipo de dato a ‘z’. Pero al ejecutarse la variable rebasa su valor máximo.
+let y: Int8 = 120 let z = y &#43; 10 // Genera un error de ejecucion, al compilar se le asigna un tipo de datos Int8 a la variable let z = y &amp;&#43; 10 // El &amp; indica que swift se comporte como C, genera un overflow pero el resultado es -126  Ponemos imprimir los valores máximos y mínimos de cada entero:......
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+      
+    </div>
+   
+    <div>
+      
+    </div>
+  </div>
+
+</div>
+
+              
+                  <div class="post-wrapper white-bg post-card">
+  
   <a href="/post/libros/">
     <div class="post-header text-center">
       <div class="px-4 post-heading">Libros 2019</div>
@@ -664,52 +710,6 @@ Ventaja para los desarrolladores  Rust es una herramienta productiva que te perm
           <li><a href="/categories/programming"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Programming </a></li>
         
           <li><a href="/categories/rust"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Rust </a></li>
-        
-      
-      
-    </div>
-   
-    <div>
-      
-    </div>
-  </div>
-
-</div>
-
-              
-                  <div class="post-wrapper white-bg post-card">
-  
-  <a href="/post/pruebas/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Pruebas</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>May 14, 2018</li>
-        
-    
-        
-          <li class="middot"></li>
-          <li>2 minutes read</li>
-        
-      </ul>
-    </div>
-    
-
-    
-      Pruebas en el desarrollo de software Dentro del desarrollo de software los errores existen en cualquier etapa del proyecto, aun cuando pensemos que nuestro código esta bien, existen ocasiones en las que no contemplamos bien el resultado de una validación y el resultado que esperamos no es el mismo que arroja. Algo importante en el desarrollo de nuestro proyecto es ocupar métodos que nos permitan tener más desglosado nuestro código para facilitarnos la aplicación de pruebas para así saber en dónde falla nuestro código. Otro aspecto importante por lo cual es importante realizar pruebas, es porque en ocasiones para compilar proyectos grandes se toman algunos minutos, y suponiendo que sean solo 3 o 4 minutos a la larga comprobar que la validación que acabas de realizar funciona, se vuelve muy cansado y los proyectos comienzan a alargarse en el tiempo.
-Para verlo un poco más claro explicaremos un pequeño ejemplo: &gt;Tenemos unas cadenas de letras y queremos saber si tienen dos letras iguales juntas.
-Lo probaremos con estas cadenas para verificar si el programa funciona correctamente:
- asdfgjwerpoq asdgmymdffdg   Comenzando con la prueba, crearemos la clase que nos permita ver si nuestro programa funciona. Crearemos métodos para probar cada cadena por separado.......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-        
-          <li><a href="/categories/testing"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Testing </a></li>
         
       
       
