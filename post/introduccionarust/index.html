@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zn-Hans">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  <meta name="author" content="Karla Jurado">
+  <meta name="description" content="Acercamiento a Rust Introducción Rust es un lenguaje de programación que trabaja con detalles de bajo nivel, representación de datos y concurrencia. Rust esta diseñado para desarrollar código confiable que sea eficiente en términos de velocidad y uso de memoria. Por ejemplo, al introducir el paralelismo en Rust resultará una operación de relativamente bajo riesgo: el compilador detectará los errores clásicos por nosotros. El control de bajo nivel y la ergonomía de alto nivel a menudo están peleados entre sí en el diseño de lenguaje de programación pero Rust desafía este problema.
+Rust no se limita a la programación de sistemas de bajo nivel. Es lo suficiente ergonómico para hacer que las aplicaciones de CLI(command-line interface), y otros tipos de código sean bastante agradables de escribir.
+Rust también cuenta con herramientas de desarrollo de programación de sistemas: - Cargo: el administrador de dependencias incluido y la herramienta de compilación, facilita agregar, compilar y gestionar dependencias siendo coherente en todo el ecosistema de Rust. - Rustfmt que garantiza un estilo de codificación consistente entre los desarrolladores. - Rust Language Server potencia la integración IDE para completar el código y mensajes de error en línea.
+Ventaja para los desarrolladores  Rust es una herramienta productiva que te permite colaborar entre grandes equipos de desarrolladores con diferentes niveles de conocimiento de programación de sistemas.">
+  
+  <meta property="og:title" content="Introducción a Rust" />
+<meta property="og:description" content="Acercamiento a Rust Introducción Rust es un lenguaje de programación que trabaja con detalles de bajo nivel, representación de datos y concurrencia. Rust esta diseñado para desarrollar código confiable que sea eficiente en términos de velocidad y uso de memoria. Por ejemplo, al introducir el paralelismo en Rust resultará una operación de relativamente bajo riesgo: el compilador detectará los errores clásicos por nosotros. El control de bajo nivel y la ergonomía de alto nivel a menudo están peleados entre sí en el diseño de lenguaje de programación pero Rust desafía este problema.
+Rust no se limita a la programación de sistemas de bajo nivel. Es lo suficiente ergonómico para hacer que las aplicaciones de CLI(command-line interface), y otros tipos de código sean bastante agradables de escribir.
+Rust también cuenta con herramientas de desarrollo de programación de sistemas: - Cargo: el administrador de dependencias incluido y la herramienta de compilación, facilita agregar, compilar y gestionar dependencias siendo coherente en todo el ecosistema de Rust. - Rustfmt que garantiza un estilo de codificación consistente entre los desarrolladores. - Rust Language Server potencia la integración IDE para completar el código y mensajes de error en línea.
+Ventaja para los desarrolladores  Rust es una herramienta productiva que te permite colaborar entre grandes equipos de desarrolladores con diferentes niveles de conocimiento de programación de sistemas." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/introduccionarust/" /><meta property="article:published_time" content="2018-05-15T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-05-15T00:00:00&#43;00:00"/>
+
+
+  <title>
+  
+       Introducción a Rust | Karla Jurado 
+  
+  </title>
+
+  <link rel="canonical" href="/post/introduccionarust/">
+
+  
+  
+
+  
+  <link href="/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+      href="/img/zheng.png"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+    
+    <link rel="stylesheet" href="/js/vendors/katex/katex.min.css">
+  
+  
+
+  
+    
+    <link rel="stylesheet" href="/css/vendors/highlight/github-gist.css">
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="/">
+          
+        <img class="avatar" src="/img/zheng.png" style="width: 40px!important;height: auto;"  class="d-inline-block align-top" alt="" >
+        
+        <strong> Karla Jurado</strong>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="/about/" >About  </a>
+            </li>
+          
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+ 
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('/img/header-slides/abstract-art-canvas-288099.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="/">
+          
+            <img class="pull-right avatar avatar-md" src="/img/profile.jpg" alt="" >
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="/">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>Karla Jurado</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+              <a href="https://github.com/KarlaJu" target="_blank" rel="noopener"><i class="fab fa-github pr-1" aria-hidden="true"></i></a>    
+            
+            
+
+            
+
+            
+
+            
+                <a href="https://twitter.com/KarlaJuJ" target="_blank" rel="noopener"><i class="fab fa-twitter pr-1" aria-hidden="true"></i></a>
+            
+
+            
+                <a href="https://www.instagram.com/acoralay/" target="_blank" rel="noopener"><i class="fab fa-instagram pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+    
+        
+            
+                <a href="mailto:karla@makingdevs.com"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="post-main-wrapper">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="container pr-5">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+      
+        <li><a href="/categories/programming"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Programming </a></li>
+      
+        <li><a href="/categories/rust"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Rust </a></li>
+      
+    
+    
+  </ul>
+
+  <div class="px-4 post-heading">Introducción a Rust</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>May 15, 2018</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>2 minutes read</li>
+    
+  </ul>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            
+
+<h1 id="acercamiento-a-rust">Acercamiento a Rust</h1>
+
+<h2 id="introducción">Introducción</h2>
+
+<p>Rust es un lenguaje de programación que trabaja con detalles de bajo nivel, representación de datos y concurrencia. Rust esta diseñado para desarrollar código confiable que sea eficiente en términos de velocidad y uso de memoria. Por ejemplo, al introducir el paralelismo en Rust resultará una operación de relativamente bajo riesgo: el compilador detectará los errores clásicos por nosotros.
+El control de bajo nivel y la ergonomía de alto nivel a menudo están peleados entre sí en el diseño de lenguaje de programación pero Rust desafía este problema.</p>
+
+<p>Rust no se limita a la programación de sistemas de bajo nivel. Es lo suficiente ergonómico para hacer que las aplicaciones de CLI(command-line interface), y otros tipos de código sean bastante agradables de escribir.</p>
+
+<p>Rust también cuenta con herramientas de desarrollo de programación de sistemas:
+- Cargo: el administrador de dependencias incluido y la herramienta de compilación, facilita agregar, compilar y gestionar dependencias siendo coherente en todo el ecosistema de Rust.
+- Rustfmt que garantiza un estilo de codificación consistente entre los desarrolladores.
+- Rust Language Server potencia la integración IDE para completar el código y mensajes de error en línea.</p>
+
+<h2 id="ventaja-para-los-desarrolladores">Ventaja para los desarrolladores</h2>
+
+<ul>
+<li><p>Rust es una herramienta productiva que te permite colaborar entre grandes equipos de desarrolladores con diferentes niveles de conocimiento de programación de sistemas.</p></li>
+
+<li><p>El compilador de Rust  se niega a compilar código con errores sutiles, incluidos los errores de concurrencia.</p></li>
+</ul>
+
+<hr />
+
+<h2 id="instalación">Instalación</h2>
+
+<p>Dependiendo del sistema operativo aquí podrán seguir los pasos a seguir para la instalación.
+<a href="https://doc.rust-lang.org/book/second-edition/ch01-01-installation.html">Installation - The Rust Programming Language</a></p>
+
+<hr />
+
+<p>Si deseas ver la documentación completa de Rust aquí esta el link <a href="https://doc.rust-lang.org/book/second-edition/index.html">Foreword - The Rust Programming Language</a></p>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=/post/pruebas/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>Pruebas</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+      <a href="https://github.com/KarlaJu " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
+    
+    
+
+    
+
+    
+
+    
+        <a href="https://twitter.com/KarlaJuJ" target="_blank" rel="noopener"><i class="fab fa-twitter mr-3" aria-hidden="true"></i></a>
+    
+
+    
+        <a href="https://www.instagram.com/acoralay/" target="_blank" rel="noopener"><i class="fab fa-instagram mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+
+    
+        <a href="mailto:karla@makingdevs.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2016 - 2019 &copy; | Theme <a href='https://github.com/orianna-zzo/AllinOne' target="_blank">AllinOne</a> by <a href='https://github.com/orianna-zzo' target="_blank">Orianna</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="/js/vendors-extensions/bootstrap4/bootstrap.js" ></script>
+
+<script type="text/javascript" src="/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+  
+  <script src="/js/vendors/highlight.pack.js"> </script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+  <script src="/js/vendors/katex/katex.min.js"> </script>
+  <script src="/js/vendors/katex/contrib/auto-render.min.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body);
+      });
+  </script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>

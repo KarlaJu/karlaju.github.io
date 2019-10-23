@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swift on Karla Jurado</title>
+    <link>/categories/swift/</link>
+    <description>Recent content in Swift on Karla Jurado</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Sun, 20 Oct 2019 21:45:28 -0500</lastBuildDate>
+    
+	<atom:link href="/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducción a Swift</title>
+      <link>/post/swift-intro/</link>
+      <pubDate>Sun, 20 Oct 2019 21:45:28 -0500</pubDate>
+      
+      <guid>/post/swift-intro/</guid>
+      <description>Introducción a Swift Contenido 1.- Variables
+2.- Constantes
+3.- Tipos de datos
+ 3.1.- Entero
+ 3.2.- Cadenas
+ 3.3.- Flotante
+ 3.4.- Double
+  4.- Modelado de datos
+ 4.1.- Tuplas
+ 4.1.1.- Switch  4.2.- Opcionales
+ 4.2.1.- IF LET  4.3.- Arreglos
+ 4.4.- Enums
+ 4.4.1.- Switch con enums  4.5.- Diccionarios
+ 4.6.- Conjuntos
+  Variables La declaración de una variable, puede ser de dos formas:
+var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
+let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.
+ Tipos de datos Si no se le indica el tipo de dato a la variable, el compilador lo tomará de acuerdo a su valor.
+Entero El valor por defecto que tiene un entero es de 64 bits.
+var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow.</description>
+    </item>
+    
+  </channel>
+</rss>

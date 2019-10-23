@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Karla Jurado</title>
+    <link>/categories/programming/</link>
+    <description>Recent content in Programming on Karla Jurado</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Tue, 15 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducción a Rust</title>
+      <link>/post/introduccionarust/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/introduccionarust/</guid>
+      <description>Acercamiento a Rust Introducción Rust es un lenguaje de programación que trabaja con detalles de bajo nivel, representación de datos y concurrencia. Rust esta diseñado para desarrollar código confiable que sea eficiente en términos de velocidad y uso de memoria. Por ejemplo, al introducir el paralelismo en Rust resultará una operación de relativamente bajo riesgo: el compilador detectará los errores clásicos por nosotros. El control de bajo nivel y la ergonomía de alto nivel a menudo están peleados entre sí en el diseño de lenguaje de programación pero Rust desafía este problema.
+Rust no se limita a la programación de sistemas de bajo nivel. Es lo suficiente ergonómico para hacer que las aplicaciones de CLI(command-line interface), y otros tipos de código sean bastante agradables de escribir.
+Rust también cuenta con herramientas de desarrollo de programación de sistemas: - Cargo: el administrador de dependencias incluido y la herramienta de compilación, facilita agregar, compilar y gestionar dependencias siendo coherente en todo el ecosistema de Rust. - Rustfmt que garantiza un estilo de codificación consistente entre los desarrolladores. - Rust Language Server potencia la integración IDE para completar el código y mensajes de error en línea.
+Ventaja para los desarrolladores  Rust es una herramienta productiva que te permite colaborar entre grandes equipos de desarrolladores con diferentes niveles de conocimiento de programación de sistemas.</description>
+    </item>
+    
+    <item>
+      <title>Advent Of Code</title>
+      <link>/post/advent/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/advent/</guid>
+      <description>Durante todo el mes de Abril y lo que lleva el mes de Mayo he resuelto problemas de la página Advent of Code el evento 2015.
+ Advent Of code 2015
+ Son acertijos de programación que se plantean de una forma muy divertida, como ayudar a Santa a poder entregar regalos en las casas o ayudarlo a extraer &amp;ldquo;AdventCoins&amp;rdquo;, las cuales estan basadas en Bitcoins.
+ Son 25 acertijos y cada uno tiene dos partes.
+ Las últimas dos semanas me costo trabajo realizar el ejercicio 5 porque lo desarrollé haciendo muchas validaciones, me causó problemas hacerlo con tantos if anidados. Pero pedí ayuda para poder resolverlo y un chico llamado Brandon me explicó algo llamado &amp;ldquo;Expresiones regulares&amp;rdquo;, y realizarlo en groovy fue muy sencillo realizar las busquedas que yo necesitaba para el problema 5.
+ Ahora para la parte dos, estoy estudiando más profundamente la expresiones regulares para poder buscar las coincidencias que necesito en la cadena.
+ </description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>/post/rust/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rust/</guid>
+      <description>Desde hace unos días he empezado a estudiar el lenguaje de programación Rust. Rust es un lenguaje de programación de sistemas, su desarrollador es Mozilla. Ha sido diseñado para ser concurrente y practico. Está inspirado en el lenguaje de programación C. Al ver la sintaxis de Rust, me costó un poco de trabajo entender un poco los conceptos de variables mutables e inmutables.
+ Porque las variables predeterminadas son inmutables, lo que significa que una vez que un valor está vinculado a una variable, no puede cambiar ese valor. Si no se le puede cambiar el valor a una variable se vuelve en una constante y por eso debemos hacer uso de la mutabilidad.</description>
+    </item>
+    
+    <item>
+      <title>Introducción a React Js</title>
+      <link>/post/react-intro/</link>
+      <pubDate>Tue, 09 Apr 2019 21:32:07 -0500</pubDate>
+      
+      <guid>/post/react-intro/</guid>
+      <description>¿Qué es?  Biblioteca para construir interfaces web Es la vista en MVC Sigle Page Application Sólo se encarga de la interfaz  ¿Por qué? Hacer más fácil la creación de interfaces web usando javascript
+Ventajas  Miestras escribes código podrás ver tus cambios Utiliza virtual Dom para refrescar la parte en la memoria que cambio Tiene/utiliza componentes  Componentes  API reusable Crea etiquetas HTML para reutilizar Reusable HTML, CSS, Javascript  Instalación  Instalar node.js Generador de proyectos   $ npm install -g create-react-app   Creación de la aplicación react   $ create-reat-app my-app   Entrar a la carpeta del proyecto   $ cd my-app   Levantar el proyecto   $ npm start  En el punto número cuatro al entrar a la carpeta del proyecto, aparecerá la siguiente estructura de archivos:
+my-app
+   Descripción    README.md  Documentación del proyecto   package.json Archivo que contiene el nombre, la version, dependencias del proyecto, etc.   package.lock.json Archivo generado para guardar las versiones del proyecto, este archivo no se toca   .gitignore Para la utilización de git   node_modules Se instalan los entornos js que se utilizarán para el proyecto   public Donde se colocan los archivos HTML   --- index.</description>
+    </item>
+    
+  </channel>
+</rss>
