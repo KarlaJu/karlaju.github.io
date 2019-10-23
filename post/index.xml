@@ -66,14 +66,26 @@ Lo probaremos con estas cadenas para verificar si el programa funciona correctam
       <pubDate>Sun, 20 Oct 2019 21:45:28 -0500</pubDate>
       
       <guid>/post/swift-intro/</guid>
-      <description>Introducción a Swift Variables La declaración de una variable, puede ser de dos formas:
+      <description>Introducción a Swift Contenido 1.- Variables
+2.- Constantes
+3.- Tipos de datos
+ 3.1.- Entero
+ 3.2.- Cadenas
+ 3.3.- Flotante
+ 3.4.- Double
+  4.- Modelado de datos
+ 4.1.- Tuplas
+ 4.1.1.- Switch  4.2.- Opcionales
+ 4.2.1.- IF LET  4.3.- Arreglos
+ 4.4.- Enums
+ 4.4.1.- Switch con enums  4.5.- Diccionarios
+ 4.6.- Conjuntos
+  Variables La declaración de una variable, puede ser de dos formas:
 var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
 let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.
  Tipos de datos Si no se le indica el tipo de dato a la variable, el compilador lo tomará de acuerdo a su valor.
 Entero El valor por defecto que tiene un entero es de 64 bits.
-var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow.
- En este caso se genera un error en tiempo de ejecución, el compilador al usar &amp;lsquo;y&amp;rsquo; y saber qué es de tipo Int8, le pone el mismo tipo de dato a &amp;lsquo;z&amp;rsquo;. Pero al ejecutarse la variable rebasa su valor máximo.
-let y: Int8 = 120 let z = y + 10 // Genera un error de ejecucion, al compilar se le asigna un tipo de datos Int8 a la variable let z = y &amp;amp;+ 10 // El &amp;amp; indica que swift se comporte como C, genera un overflow pero el resultado es -126  Ponemos imprimir los valores máximos y mínimos de cada entero:</description>
+var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow.</description>
     </item>
     
     <item>

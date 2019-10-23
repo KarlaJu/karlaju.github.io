@@ -7,27 +7,52 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="Karla Jurado">
-  <meta name="description" content="Introducción a Swift Variables La declaración de una variable, puede ser de dos formas:
+  <meta name="description" content="Introducción a Swift Contenido 1.- Variables
+2.- Constantes
+3.- Tipos de datos
+ 3.1.- Entero
+ 3.2.- Cadenas
+ 3.3.- Flotante
+ 3.4.- Double
+  4.- Modelado de datos
+ 4.1.- Tuplas
+ 4.1.1.- Switch  4.2.- Opcionales
+ 4.2.1.- IF LET  4.3.- Arreglos
+ 4.4.- Enums
+ 4.4.1.- Switch con enums  4.5.- Diccionarios
+ 4.6.- Conjuntos
+  Variables La declaración de una variable, puede ser de dos formas:
 var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
 let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.
  Tipos de datos Si no se le indica el tipo de dato a la variable, el compilador lo tomará de acuerdo a su valor.
 Entero El valor por defecto que tiene un entero es de 64 bits.
-var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow.
- En este caso se genera un error en tiempo de ejecución, el compilador al usar &lsquo;y&rsquo; y saber qué es de tipo Int8, le pone el mismo tipo de dato a &lsquo;z&rsquo;. Pero al ejecutarse la variable rebasa su valor máximo.
-let y: Int8 = 120 let z = y &#43; 10 // Genera un error de ejecucion, al compilar se le asigna un tipo de datos Int8 a la variable let z = y &amp;&#43; 10 // El &amp; indica que swift se comporte como C, genera un overflow pero el resultado es -126  Ponemos imprimir los valores máximos y mínimos de cada entero:">
+var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow.">
   
   <meta property="og:title" content="Introducción a Swift" />
-<meta property="og:description" content="Introducción a Swift Variables La declaración de una variable, puede ser de dos formas:
+<meta property="og:description" content="Introducción a Swift Contenido 1.- Variables
+2.- Constantes
+3.- Tipos de datos
+ 3.1.- Entero
+ 3.2.- Cadenas
+ 3.3.- Flotante
+ 3.4.- Double
+  4.- Modelado de datos
+ 4.1.- Tuplas
+ 4.1.1.- Switch  4.2.- Opcionales
+ 4.2.1.- IF LET  4.3.- Arreglos
+ 4.4.- Enums
+ 4.4.1.- Switch con enums  4.5.- Diccionarios
+ 4.6.- Conjuntos
+  Variables La declaración de una variable, puede ser de dos formas:
 var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
 let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.
  Tipos de datos Si no se le indica el tipo de dato a la variable, el compilador lo tomará de acuerdo a su valor.
 Entero El valor por defecto que tiene un entero es de 64 bits.
-var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow.
- En este caso se genera un error en tiempo de ejecución, el compilador al usar &lsquo;y&rsquo; y saber qué es de tipo Int8, le pone el mismo tipo de dato a &lsquo;z&rsquo;. Pero al ejecutarse la variable rebasa su valor máximo.
-let y: Int8 = 120 let z = y &#43; 10 // Genera un error de ejecucion, al compilar se le asigna un tipo de datos Int8 a la variable let z = y &amp;&#43; 10 // El &amp; indica que swift se comporte como C, genera un overflow pero el resultado es -126  Ponemos imprimir los valores máximos y mínimos de cada entero:" />
+var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar el valor máximo que usará   Se debe tener cuidado cuando se indique el valor máximo que utilizará porque si rebasa ese valor puede causar un overflow." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/swift-intro/" /><meta property="article:published_time" content="2019-10-20T21:45:28-05:00"/>
-<meta property="article:modified_time" content="2019-10-20T21:45:28-05:00"/>
+<meta property="article:modified_time" content="2019-10-20T21:45:28-05:00"/><meta property="og:see_also" content="/post/vim/" />
+
 
 
   <title>
@@ -261,6 +286,14 @@ let y: Int8 = 120 let z = y &#43; 10 // Genera un error de ejecucion, al compila
           <div class="post-header text-center" >
   <ul class="post-meta li-x">
     
+      
+        <li><a href="/categories/swift"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> Swift </a></li>
+      
+    
+    
+      
+        <li><a href="/series/technology"><i class="fas fa-bookmark pr-1" aria-hidden="true"></i>technology</a></li>
+      
     
   </ul>
 
@@ -285,6 +318,52 @@ let y: Int8 = 120 let z = y &#43; 10 // Genera un error de ejecucion, al compila
             
 
 <h2 id="introducción-a-swift">Introducción a Swift</h2>
+
+<h3 id="contenido">Contenido</h3>
+
+<p><a href="#variables">1.- Variables</a></p>
+
+<p><a href="#constantes">2.- Constantes</a></p>
+
+<p><a href="#tipos-de-datos">3.- Tipos de datos</a></p>
+
+<ul>
+<li><p><a href="#entero">3.1.- Entero</a></p></li>
+
+<li><p><a href="#cadenas">3.2.- Cadenas</a></p></li>
+
+<li><p><a href="#flotante">3.3.- Flotante</a></p></li>
+
+<li><p><a href="#double">3.4.- Double</a></p></li>
+</ul>
+
+<p><a href="#modelado-de-datos">4.- Modelado de datos</a></p>
+
+<ul>
+<li><p><a href="#tuplas">4.1.- Tuplas</a></p>
+
+<ul>
+<li><a href="#switch">4.1.1.- Switch</a></li>
+</ul></li>
+
+<li><p><a href="#opcionales">4.2.- Opcionales</a></p>
+
+<ul>
+<li><a href="#if-let">4.2.1.- IF LET</a></li>
+</ul></li>
+
+<li><p><a href="#arreglos">4.3.- Arreglos</a></p></li>
+
+<li><p><a href="#enums">4.4.- Enums</a></p>
+
+<ul>
+<li><a href="#switch-con-enums">4.4.1.- Switch con enums</a></li>
+</ul></li>
+
+<li><p><a href="#diccionarios">4.5.- Diccionarios</a></p></li>
+
+<li><p><a href="#conjuntos">4.6.- Conjuntos</a></p></li>
+</ul>
 
 <h3 id="variables">Variables</h3>
 
@@ -325,7 +404,7 @@ let number: Int8 = 120 //Se puede indicar el valor máximo que usará
 <p>En este caso se genera un error en tiempo de ejecución, el compilador al usar &lsquo;y&rsquo; y saber qué es de tipo Int8, le pone el mismo tipo de dato a &lsquo;z&rsquo;. Pero al ejecutarse la variable rebasa su valor máximo.</p>
 
 <pre><code class="language-swift">let y: Int8 = 120
-let z = y + 10 // Genera un error de ejecucion, al compilar se le asigna un tipo de datos Int8 a la variable
+let z = y + 10 // Genera un error de ejecución, al compilar se le asigna un tipo de datos Int8 a la variable
 
 let z = y &amp;+ 10 // El &amp; indica que swift se comporte como C, genera un overflow pero el resultado es -126
 </code></pre>
@@ -360,7 +439,7 @@ myString2.unicodeScalars.count //imprime: 10
 
 
 //Estructuras de control
-//Lo que devulve indices es un iterador
+//Lo que devuelve indices es un iterador
 for index in myString2.indices {
   print(&quot;La salida es: \(myString2[index])&quot;)
 }
@@ -419,7 +498,7 @@ print(errorCode2.description) //imprime: Not Found
 
 <p>Asignación de variables con Pattern Matching de una tupla:</p>
 
-<pre><code class="language-swift">//Funciona como una afirmacion
+<pre><code class="language-swift">//Funciona como una afirmación
 //Lo que esta del lado izquierdo es igual a lo que tengo del lado derecho
 //Se de-estructura para poder extraer valores
 
@@ -504,7 +583,7 @@ x4 = nil //Error de compilación
 <p>De esta manera, es más visual que la variable puede ser nula. Cuando la variable es declarada como posible nula, es necesario forzar a sacar el valor de la variable.</p>
 
 <pre><code class="language-swift">var  f: Float? = 1.0
-let  flotante = f! +  1.9  //El signo de admiracion es para forzar a sacar valor
+let  flotante = f! +  1.9  //El signo de admiración es para forzar a sacar valor
 </code></pre>
 
 <blockquote>
@@ -516,7 +595,7 @@ let  flotante = f! +  1.9  //El signo de admiracion es para forzar a sacar valor
 <p>En caso de realmente necesitar usar una variable que tal vez sea nula. La mejor forma de manejarla es con un if let. Si la variable es nula, no hará nada con la variable.</p>
 
 <pre><code class="language-swift">if  let x = f {
-  print(&quot;Todo bien \(x+1)&quot;) //Tambien se puede quedar con el if, sin la necesidad de usar else
+  print(&quot;Todo bien \(x+1)&quot;) //También se puede quedar con el if, sin la necesidad de usar else
 } else {
   print(&quot;El opcional no tiene valor&quot;)
 }
@@ -543,11 +622,11 @@ if  let s = cadenaOpcional {
 
 <pre><code class="language-swift">var  librosFavoritos1: [String] = [&quot;Aprende Swift en 3 segundos&quot;,
 &quot;Elm para principiantes&quot;,
-&quot;Crea sitios increibles con Elixir&quot;]
+&quot;Crea sitios increíbles con Elixir&quot;]
 
 var  librosFavoritos = [&quot;Aprende Swift en 3 segundos&quot;,
 &quot;Elm para principiantes&quot;,
-&quot;Crea sitios increibles con Elixir&quot;] //Inferencia de tipos
+&quot;Crea sitios increíbles con Elixir&quot;] //Inferencia de tipos
 </code></pre>
 
 <p>Algunas funciones con arreglos:</p>
@@ -557,10 +636,10 @@ librosFavoritos.first  //Imprime: Aprende Swift en 3 segundos
 librosFavoritos.last  //Imprime: Crea sitios increibles con Elixir
 librosFavoritos[1]  //Imprime: Elm para principiantes
 librosFavoritos.append(&quot;Code complete&quot;)  //Imprime: [&quot;Aprende Swift en 3 segundos&quot;, &quot;Elm para principiantes&quot;, &quot;Crea sitios increibles con Elixir&quot;, &quot;Code complete&quot;]
-librosFavoritos[2]  //Imprime: Crea sitios increibles con Elixir
-librosFavoritos.insert(&quot;The art of unix programming&quot;, at: 2) //Imprime: [&quot;Aprende Swift en 3 segundos&quot;, &quot;Elm para principiantes&quot;, &quot;The art of unix programming&quot;, &quot;Crea sitios increibles con Elixir&quot;, &quot;Code complete&quot;]
+librosFavoritos[2]  //Imprime: Crea sitios increíbles con Elixir
+librosFavoritos.insert(&quot;The art of unix programming&quot;, at: 2) //Imprime: [&quot;Aprende Swift en 3 segundos&quot;, &quot;Elm para principiantes&quot;, &quot;The art of unix programming&quot;, &quot;Crea sitios increíbles con Elixir&quot;, &quot;Code complete&quot;]
 librosFavoritos[2]  //Imprime: The art of unix programming
-librosFavoritos.remove(at: 3)  //Imprime: Crea sitios increibles con Elixir
+librosFavoritos.remove(at: 3)  //Imprime: Crea sitios increíbles con Elixir
 </code></pre>
 
 <p>Iterar arreglos:</p>
@@ -606,7 +685,7 @@ diaSemana = .Jueves
 
 <pre><code class="language-swift">switch  diaSemana {
   case .Lunes:
-    print(&quot;Otra vez a trbajar&quot;)
+    print(&quot;Otra vez a trabajar&quot;)
   case .Martes:
     print(&quot;Ya quiero que acabe la semana&quot;)
   case .Miércoles:
@@ -670,7 +749,7 @@ var  amigos3: Set = [&quot;Fabian&quot;, &quot;Freddy&quot;, &quot;Andres&quot;,
 <pre><code class="language-swift">amigos3.insert(&quot;Julian&quot;) //Imprime: (inserted true, memberAfterInsert &quot;Julian&quot;)
 amigos3.remove(&quot;Ernesto&quot;)
 //No acepta duplicados
-//Regresar una isercion falsa si se inserta un duplicado
+//Regresar una inserción falsa si se inserta un duplicado
 
 amigos3.insert(&quot;Julian&quot;)  //Imprime: (inserted false, memberAfterInsert &quot;Julian&quot;)
 
@@ -678,7 +757,7 @@ let  estaVacio = amigos3.isEmpty  //Imprime: false
 let  estaAndres = amigos3.contains(&quot;Andres&quot;)  //Imprime: true
 let  numeroAmigos = amigos3.count  //Imprime: 4
 
-//Intersecciones, diferencia de interesecciones y la union
+//Intersecciones, diferencia de intersecciones y la union
 
 let  comunes = amigos2.intersection(amigos3)  //Imprime: {&quot;Andres&quot;}
 let  diferencias = amigos2.symmetricDifference(amigos3)  //Imprime: {&quot;Ernesto&quot;, &quot;Julieta&quot;, &quot;Fabian&quot;, &quot;Freddy&quot;, &quot;Julian&quot;, &quot;Violeta&quot;}
@@ -690,7 +769,7 @@ let  resta2 = amigos2.subtracting(amigos3) //Imprime: {'Julieta', 'Violeta', 'Er
 <p>Iterando conjuntos:</p>
 
 <ul>
-<li>No hay que perder de vista que no hay garantia de orden</li>
+<li>No hay que perder de vista que no hay garantía de orden</li>
 </ul>
 
 <pre><code class="language-swift">for amigo in amigos3 {
