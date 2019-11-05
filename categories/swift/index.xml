@@ -24,13 +24,18 @@
  3.2.- Cadenas
  3.3.- Flotante
  3.4.- Double
-  4.- Modelado de datos
- 4.1.- Tuplas
- 4.1.1.- Switch  4.2.- Opcionales
- 4.2.1.- IF LET  4.3.- Arreglos
- 4.4.- Enums
- 4.4.1.- Switch con enums  4.5.- Diccionarios
- 4.6.- Conjuntos
+  4.- Funciones
+5.- Modelado de datos
+ 5.1.- Tuplas
+ 5.1.1.- Switch
+ 5.2.- Opcionales
+ 5.2.1.- IF LET
+ 5.2.2.- Casos particulares con opcionales
+ 5.3.- Arreglos
+ 5.4.- Enums
+ 5.4.1.- Switch con enums
+ 4.5.- Diccionarios
+ 5.6.- Conjuntos
   Variables La declaración de una variable, puede ser de dos formas:
 var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
 let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.

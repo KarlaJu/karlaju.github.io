@@ -14,13 +14,18 @@
  3.2.- Cadenas
  3.3.- Flotante
  3.4.- Double
-  4.- Modelado de datos
- 4.1.- Tuplas
- 4.1.1.- Switch  4.2.- Opcionales
- 4.2.1.- IF LET  4.3.- Arreglos
- 4.4.- Enums
- 4.4.1.- Switch con enums  4.5.- Diccionarios
- 4.6.- Conjuntos
+  4.- Funciones
+5.- Modelado de datos
+ 5.1.- Tuplas
+ 5.1.1.- Switch
+ 5.2.- Opcionales
+ 5.2.1.- IF LET
+ 5.2.2.- Casos particulares con opcionales
+ 5.3.- Arreglos
+ 5.4.- Enums
+ 5.4.1.- Switch con enums
+ 4.5.- Diccionarios
+ 5.6.- Conjuntos
   Variables La declaración de una variable, puede ser de dos formas:
 var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
 let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.
@@ -36,13 +41,18 @@ var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar e
  3.2.- Cadenas
  3.3.- Flotante
  3.4.- Double
-  4.- Modelado de datos
- 4.1.- Tuplas
- 4.1.1.- Switch  4.2.- Opcionales
- 4.2.1.- IF LET  4.3.- Arreglos
- 4.4.- Enums
- 4.4.1.- Switch con enums  4.5.- Diccionarios
- 4.6.- Conjuntos
+  4.- Funciones
+5.- Modelado de datos
+ 5.1.- Tuplas
+ 5.1.1.- Switch
+ 5.2.- Opcionales
+ 5.2.1.- IF LET
+ 5.2.2.- Casos particulares con opcionales
+ 5.3.- Arreglos
+ 5.4.- Enums
+ 5.4.1.- Switch con enums
+ 4.5.- Diccionarios
+ 5.6.- Conjuntos
   Variables La declaración de una variable, puede ser de dos formas:
 var number: Int var secondNumber = 8 // Inferencia de tipos  Constantes La declaración de una contante, una vez que la variable se declare con let, su valor ya no puede cambiar:
 let number = 8   Una recomendación es siempre utilizar let. Existirán casos donde no se pueda utilizar, pero siempre es mejor utilizar let.
@@ -306,7 +316,7 @@ var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar e
 
     
       <li class="middot"></li>
-      <li>9 minutes read</li>
+      <li>16 minutes read</li>
     
   </ul>
   
@@ -337,32 +347,30 @@ var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar e
 <li><p><a href="#double">3.4.- Double</a></p></li>
 </ul>
 
-<p><a href="#modelado-de-datos">4.- Modelado de datos</a></p>
+<p><a href="#funciones">4.- Funciones</a></p>
+
+<p><a href="#modelado-de-datos">5.- Modelado de datos</a></p>
 
 <ul>
-<li><p><a href="#tuplas">4.1.- Tuplas</a></p>
+<li><p><a href="#tuplas">5.1.- Tuplas</a></p></li>
 
-<ul>
-<li><a href="#switch">4.1.1.- Switch</a></li>
-</ul></li>
+<li><p><a href="#switch">5.1.1.- Switch</a></p></li>
 
-<li><p><a href="#opcionales">4.2.- Opcionales</a></p>
+<li><p><a href="#opcionales">5.2.- Opcionales</a></p></li>
 
-<ul>
-<li><a href="#if-let">4.2.1.- IF LET</a></li>
-</ul></li>
+<li><p><a href="#if-let">5.2.1.- IF LET</a></p></li>
 
-<li><p><a href="#arreglos">4.3.- Arreglos</a></p></li>
+<li><p><a href="#casos-particulares-con-opcionales">5.2.2.- Casos particulares con opcionales</a></p></li>
 
-<li><p><a href="#enums">4.4.- Enums</a></p>
+<li><p><a href="#arreglos">5.3.- Arreglos</a></p></li>
 
-<ul>
-<li><a href="#switch-con-enums">4.4.1.- Switch con enums</a></li>
-</ul></li>
+<li><p><a href="#enums">5.4.- Enums</a></p></li>
+
+<li><p><a href="#switch-con-enums">5.4.1.- Switch con enums</a></p></li>
 
 <li><p><a href="#diccionarios">4.5.- Diccionarios</a></p></li>
 
-<li><p><a href="#conjuntos">4.6.- Conjuntos</a></p></li>
+<li><p><a href="#conjuntos">5.6.- Conjuntos</a></p></li>
 </ul>
 
 <h3 id="variables">Variables</h3>
@@ -370,7 +378,7 @@ var number: Int = 10 let number: Int let number: Int8 = 120 //Se puede indicar e
 <p>La declaración de una variable, puede ser de dos formas:</p>
 
 <pre><code class="language-swift">var number: Int
-var secondNumber = 8 //  Inferencia de tipos
+var secondNumber = 8 // Inferencia de tipos
 </code></pre>
 
 <h3 id="constantes">Constantes</h3>
@@ -405,7 +413,6 @@ let number: Int8 = 120 //Se puede indicar el valor máximo que usará
 
 <pre><code class="language-swift">let y: Int8 = 120
 let z = y + 10 // Genera un error de ejecución, al compilar se le asigna un tipo de datos Int8 a la variable
-
 let z = y &amp;+ 10 // El &amp; indica que swift se comporte como C, genera un overflow pero el resultado es -126
 </code></pre>
 
@@ -437,8 +444,8 @@ myString2.count //imprime: 9
 //De esta manera el unicode lo separa y nos regresa ambos caracteres separados
 myString2.unicodeScalars.count //imprime: 10
 
-
 //Estructuras de control
+
 //Lo que devuelve indices es un iterador
 for index in myString2.indices {
   print(&quot;La salida es: \(myString2[index])&quot;)
@@ -474,10 +481,107 @@ let myDouble2: Double
 </blockquote>
 
 <pre><code class="language-swift">print(&quot;myDouble + 0.1 es \(myDouble + 0.1)&quot;) //imprime: 1.2000000000000002
-
 if myDouble + 0.1 == 1.2 {
   print(&quot;Son iguales&quot;) // Nunca entra
 }
+</code></pre>
+
+<h3 id="funciones">Funciones</h3>
+
+<p>Invocación y declaración de una función sin parámetros:</p>
+
+<pre><code class="language-swift">func myfunction() {
+  print(&quot;Hola esta es mi función&quot;)
+}
+myfunction()
+</code></pre>
+
+<p>Invocación y declaración de una función con parámetros:</p>
+
+<pre><code class="language-swift">func myfunction(person: String) {
+  print(&quot;Hola \(persona)&quot;)
+}
+
+//Se debe indicar el nombre del parámetro a mandar
+myfunction(person: &quot;Kara&quot;)
+</code></pre>
+
+<p>Si se quiere evitar el nombre del parámetro se tiene que colocar un guión bajo en la función.</p>
+
+<pre><code class="language-swift">func myfunction(_ person: String) {
+  print(&quot;Hola \(person)&quot;)
+}
+
+myfunction(&quot;Karla&quot;)
+</code></pre>
+
+<blockquote>
+<p>Es más recomendable usar siempre el nombre del parámetro para que el código sea entendible.</p>
+</blockquote>
+
+<p>Swift soporta varios parámetros y puede recibir varios indefinidos, indicados con los 3 puntos:</p>
+
+<pre><code class="language-swift">//La función regresa un arreglo
+func myfunction(people: String ...) {
+  print(&quot;Hola \(people)&quot;)
+}
+
+myfunction(people: &quot;Robert&quot;, &quot;Juan&quot;) //Imprime: &quot;Hola [&quot;Robert&quot;, &quot;Juan&quot;]&quot;
+</code></pre>
+
+<p>Y en este caso se puede colocar un for para iterar el arreglo:</p>
+
+<pre><code class="language-swift">func myfunction(people: String ...) {
+  for person in people{
+    print(&quot;Hola \(person)&quot;)
+  }
+}
+
+myfunction(people: &quot;Karla&quot;, &quot;Juan&quot;)
+</code></pre>
+
+<p>Una función con más de un parámetro:</p>
+
+<pre><code class="language-swift">func myfunction(person: String, greeting: String) {
+  print(&quot;Hola \(person), \(greeting)&quot;)
+}
+
+myfunction(person: &quot;Samuel&quot;, greeting: &quot;buenos días&quot;) //Imprime: &quot;Hola Samuel, buenos días&quot;
+</code></pre>
+
+<p>Valores por defecto en una función:</p>
+
+<pre><code class="language-swift">func myfunction(person: String = &quot;Susan&quot;) {
+  print(&quot;Hola \(person)&quot;)
+}
+
+myfunction(person: &quot;Tomás&quot;) //Imprime: &quot;Hola Tomás&quot;
+myfunction() //Imprime: &quot;Hola Susan&quot;
+</code></pre>
+
+<p>Indicar valores de retorno:</p>
+
+<pre><code class="language-swift">func myfunction(person: String = &quot;Dante&quot;) -&gt; String {
+  return &quot;Saludos a \(person)&quot;
+}
+
+let person = myfunction(person: &quot;Raúl&quot;)
+myfunction() //Imprime: &quot;Saludos a Dante&quot;
+person //Imprime: &quot;Saludos a Raúl&quot;
+</code></pre>
+
+<p>Funciones para incrementar valores a un entero:</p>
+
+<pre><code class="language-swift">let firstNumber = 10
+let secondNumber: Int = firstNumber.advanced(by: 1) //Permite incrementar por en n número
+print(&quot;\(secondNumber)&quot;) //Imprime: &quot;11&quot;
+</code></pre>
+
+<p>Se recomienda tener cuidado con este tipo de funciones ya que podrían ser opcionales.</p>
+
+<pre><code class="language-swift">let firstNumber: Int? = 10
+let secondNumber: Int = firstNumber!.advanced(by: 1) //Se tiene que forzar a sacar el valor con el signo de exclamación
+print(&quot;\(secondNumber)&quot;) //Imprime: &quot;11&quot;
 </code></pre>
 
 <h3 id="modelado-de-datos">Modelado de datos</h3>
@@ -507,8 +611,6 @@ print(&quot;\(code) : \(message)&quot;) //imprime: 404 : Not Found
 
 //De esta manera no importa recuperar el primer elemento, el único que importa es el segundo
 let (_, message2) = errorCode
-
-
 let errorCode3 = (404, &quot;Not found&quot;, &quot;Otro mensaje&quot;)
 let (_,_,message3) = errorCode3
 print(message3) //Imprime: Otro mensaje
@@ -516,11 +618,11 @@ print(message3) //Imprime: Otro mensaje
 
 <h3 id="switch">Switch</h3>
 
-<p>No importa qué tipo de dato sea, switch lo soporta.
-Lleva break por defecto, así que no es necesario indicarlo.</p>
+<p>No importa qué tipo de dato sea, switch lo soporta.</p>
+
+<p>Lleva break por defecto, así que no es necesario indicarlo.</p>
 
 <pre><code class="language-swift">let personaje: String = &quot;Lobo estepario&quot;
-
 switch personaje {
   case &quot;Caballero&quot;:
     print(&quot;El personaje \(personaje) es un caballero&quot;)
@@ -537,25 +639,26 @@ switch personaje {
 <blockquote>
 <p>En la medida de lo posible, evitar poner default en el switch. Debido a que en ocasiones dentro del default no se declara ninguna acción y se vuelve un problema cuando la aplicación no manda ningún error.</p>
 
-<p>Se recomienda  manejar todos los casos y no colocar default.</p>
+<p>Se recomienda manejar todos los casos y no colocar default.</p>
 </blockquote>
 
 <p>El switch soporta rangos:</p>
 
-<pre><code class="language-swift">var  numero = 5
-switch  numero {
-  case  0...5:
+<pre><code class="language-swift">var numero = 5
+switch numero {
+  case 0...5:
     numero += 1
     fallthrough //Realizará las acciones y seguirá para entrar en el siguiente caso si es que cumple
-  case  6..&lt;10:
+  case 6..&lt;10:
     numero *= 1
-  case  11:
+  case 11:
     print(&quot;Hola&quot;)
     break
   default:
     numero += 1
     print(numero)
 }
+
 </code></pre>
 
 <h3 id="opcionales">Opcionales</h3>
@@ -563,7 +666,7 @@ switch  numero {
 <p>En swift las variables no pueden ser nulas. El proyecto no compila sí tiene valores nulos.</p>
 
 <pre><code class="language-swift">var x2: Int
-x2 + 1  // x2 no esta declarada, es nula. Y por lo tanto no compila
+x2 + 1 // x2 no esta declarada, es nula. Y por lo tanto no compila
 </code></pre>
 
 <p>De esta manera se declaran las variables opcionales en swift:</p>
@@ -582,19 +685,19 @@ x4 = nil //Error de compilación
 
 <p>De esta manera, es más visual que la variable puede ser nula. Cuando la variable es declarada como posible nula, es necesario forzar a sacar el valor de la variable.</p>
 
-<pre><code class="language-swift">var  f: Float? = 1.0
-let  flotante = f! +  1.9  //El signo de admiración es para forzar a sacar valor
+<pre><code class="language-swift">var f: Float? = 1.0
+let flotante = f! + 1.9 //El signo de admiración es para forzar a sacar valor
 </code></pre>
 
 <blockquote>
-<p>Se recomiendo evitar optionals siempre</p>
+<p>Se recomiendo evitar los opcionales siempre</p>
 </blockquote>
 
 <h5 id="if-let">IF LET</h5>
 
 <p>En caso de realmente necesitar usar una variable que tal vez sea nula. La mejor forma de manejarla es con un if let. Si la variable es nula, no hará nada con la variable.</p>
 
-<pre><code class="language-swift">if  let x = f {
+<pre><code class="language-swift">if let x = f {
   print(&quot;Todo bien \(x+1)&quot;) //También se puede quedar con el if, sin la necesidad de usar else
 } else {
   print(&quot;El opcional no tiene valor&quot;)
@@ -603,48 +706,72 @@ let  flotante = f! +  1.9  //El signo de admiración es para forzar a sacar valo
 
 <p>Para evitar tener tantos if let anidados como en el siguiente ejemplo:</p>
 
-<pre><code class="language-swift">var  cadenaOpcional: String? = &quot;10&quot;
-if  let s = cadenaOpcional {
-  if  let i = Int(s) { // Para evitar tener tantos if anidados
-    print(&quot;El entero es \(i)&quot;)
+<pre><code class="language-swift">var cadenaOpcional: String? = &quot;10&quot;
+if let s = cadenaOpcional {
+  if let i = Int(s) { // Para evitar tener tantos if anidados
+  print(&quot;El entero es \(i)&quot;)
   }
 }
 </code></pre>
 
 <p>Se puede poner una coma y poner varias validaciones en la misma linea.</p>
 
-<pre><code class="language-swift">if  let s = cadenaOpcional, let i = Int(s) { //Si es necesario que lleve las llaves
-  print(&quot;Cadena es \(s); el entero es \(i)&quot;)  //Imprime: Cadena es 10; el entero es 10
+<pre><code class="language-swift">if let s = cadenaOpcional, let i = Int(s) { //Si es necesario que lleve las llaves
+  print(&quot;Cadena es \(s); el entero es \(i)&quot;) //Imprime: Cadena es 10; el entero es 10
 }
+</code></pre>
+
+<h4 id="casos-particulares-con-opcionales">Casos particulares con opcionales</h4>
+
+<p>En el caso de que un opcional venga vacío, se le podrá asignar un valor por defecto, como en este caso: cero.</p>
+
+<pre><code class="language-swift">let number: Int? = nil
+let secondNumber: Int = number?.advanced(by: 1) ?? 0
+print(&quot;\(secondNumber)&quot;) //Imprime: &quot;0&quot;
+</code></pre>
+
+<p>En el caso de algunas funciones como es &lsquo;first&rsquo;, devuelven valores opcionales así que se debe forzar para que no devuelva un valor opcional.</p>
+
+<pre><code class="language-swift">//Indicando el tipo se forza para que no devuleva un opcional
+var favoriteBooks: [String] = []
+
+//De esta manera controlamos si el arreglo viene vacío
+let value: String = favoriteBooks.first ?? &quot;Programming swift&quot;
+</code></pre>
+
+<p>Si no se indicara el valor de la variable, por defecto &lsquo;first&rsquo; devolvería un String opcional.</p>
+
+<pre><code class="language-swift">//En el caso de venir vacio el arreglo regresaría un nil la variable
+let value = favoriteBooks.first
 </code></pre>
 
 <h3 id="arreglos">Arreglos</h3>
 
-<pre><code class="language-swift">var  librosFavoritos1: [String] = [&quot;Aprende Swift en 3 segundos&quot;,
+<pre><code class="language-swift">var librosFavoritos1: [String] = [&quot;Aprende Swift en 3 segundos&quot;,
 &quot;Elm para principiantes&quot;,
 &quot;Crea sitios increíbles con Elixir&quot;]
 
-var  librosFavoritos = [&quot;Aprende Swift en 3 segundos&quot;,
+var librosFavoritos = [&quot;Aprende Swift en 3 segundos&quot;,
 &quot;Elm para principiantes&quot;,
 &quot;Crea sitios increíbles con Elixir&quot;] //Inferencia de tipos
 </code></pre>
 
 <p>Algunas funciones con arreglos:</p>
 
-<pre><code class="language-swift">librosFavoritos.count  //Imprime: 3
-librosFavoritos.first  //Imprime: Aprende Swift en 3 segundos
-librosFavoritos.last  //Imprime: Crea sitios increibles con Elixir
-librosFavoritos[1]  //Imprime: Elm para principiantes
-librosFavoritos.append(&quot;Code complete&quot;)  //Imprime: [&quot;Aprende Swift en 3 segundos&quot;, &quot;Elm para principiantes&quot;, &quot;Crea sitios increibles con Elixir&quot;, &quot;Code complete&quot;]
-librosFavoritos[2]  //Imprime: Crea sitios increíbles con Elixir
+<pre><code class="language-swift">librosFavoritos.count //Imprime: 3
+librosFavoritos.first //Imprime: Aprende Swift en 3 segundos
+librosFavoritos.last //Imprime: Crea sitios increibles con Elixir
+librosFavoritos[1] //Imprime: Elm para principiantes
+librosFavoritos.append(&quot;Code complete&quot;) //Imprime: [&quot;Aprende Swift en 3 segundos&quot;, &quot;Elm para principiantes&quot;, &quot;Crea sitios increibles con Elixir&quot;, &quot;Code complete&quot;]
+librosFavoritos[2] //Imprime: Crea sitios increíbles con Elixir
 librosFavoritos.insert(&quot;The art of unix programming&quot;, at: 2) //Imprime: [&quot;Aprende Swift en 3 segundos&quot;, &quot;Elm para principiantes&quot;, &quot;The art of unix programming&quot;, &quot;Crea sitios increíbles con Elixir&quot;, &quot;Code complete&quot;]
-librosFavoritos[2]  //Imprime: The art of unix programming
-librosFavoritos.remove(at: 3)  //Imprime: Crea sitios increíbles con Elixir
+librosFavoritos[2] //Imprime: The art of unix programming
+librosFavoritos.remove(at: 3) //Imprime: Crea sitios increíbles con Elixir
 </code></pre>
 
 <p>Iterar arreglos:</p>
 
-<pre><code class="language-swift">for libro in  librosFavoritos {
+<pre><code class="language-swift">for libro in librosFavoritos {
   print(libro)
 }
 
@@ -659,31 +786,30 @@ for (indice, libro) in librosFavoritos.enumerated() {
 
 <p>Con los enums se puede controlar los únicos valores que puede tener la variable:</p>
 
-<pre><code class="language-swift">enum  Dia {
+<pre><code class="language-swift">enum Dia {
   case Lunes
-  case  Martes
-  case  Miércoles
-  case  Jueves
-  case  Viernes
-  case  Sabado
+  case Martes
+  case Miércoles
+  case Jueves
+  case Viernes
+  case Sabado
 }
 
 //Restringo el tipo de dato, pero no el valor. En este caso el tipo de dato es String, el tipo de dato es dia.
 //El valor se puede cambiar simplemente con .valor del enum
 
-var  nombre: String
-var  diaSemana = Dia.Lunes
-
+var nombre: String
+var diaSemana = Dia.Lunes
 diaSemana = .Jueves
 </code></pre>
 
 <h4 id="switch-con-enums">Switch con enums</h4>
 
-<p>El switch  tiene que ser exhaustivo y cubrir todos los casos. Con el Enum, se controla los únicos valores que puede tener la variable.</p>
+<p>El switch tiene que ser exhaustivo y cubrir todos los casos. Con el Enum, se controla los únicos valores que puede tener la variable.</p>
 
 <p>Si se coloca un default incluso contemplando todos los casos, el compilador mandará un mensaje de que nunca entrará a ese caso porque la variable nunca tendrá ese valor.</p>
 
-<pre><code class="language-swift">switch  diaSemana {
+<pre><code class="language-swift">switch diaSemana {
   case .Lunes:
     print(&quot;Otra vez a trabajar&quot;)
   case .Martes:
@@ -699,12 +825,56 @@ diaSemana = .Jueves
 }
 </code></pre>
 
+<h4 id="casos-particulares-con-los-enums">Casos particulares con los Enums</h4>
+
+<p>Los Enums tienen valores por omisión y ese valor es un entero.</p>
+
+<pre><code class="language-swift">enum EstadoDocumento: Int {
+  case Recibido = 0, Validado, EnProceso, Publicado
+}
+
+let valorEstado = EstadoDocumento.Validado.rawValue //Imprime: 1, con rawvalue se saca el valor en crudo
+
+let estado = EstadoDocumento(rawValue: 2) //Imprime EnProceso. Con esto podemos sacar un valor de estado documento con su valor en crudo
+
+let estado2 = EstadoDocumento(rawValue: 4) //estado2 es de tipo opcional, porque no hay garantia. En este caso es nil.
+
+</code></pre>
+
+<p>En el caso anterior, particularmente en el &lsquo;estado2&rsquo;, normalmente esto puede llegar a suceder cuando datos externos a la aplicación quieren acceder al Enum dentro de nuestra aplicación. Es decir, cuando recibimos una respuesta de un servicio, en general se recomienda tener una capa de seguridad que valide los datos recibidos y los apruebe para poder acceder a los datos de nuestra aplicación.</p>
+
+<p>Para manejar el acceso a atributos que no existan como el caso de arriba, podemos validar los datos externos que recibimos.</p>
+
+<pre><code class="language-swift">//Primero validamos que los datos se recibieron bien
+enum ResultadoWebService {
+  case Exito(String)
+  case Error(Int)
+}
+
+func llamadaWs() -&gt; ResultadoWebService {
+  if false { //Bandera de demostración que nunca será ejecutada en este caso
+    return ResultadoWebService.Exito(&quot;Mi contenido&quot;)
+  } else {
+    return ResultadoWebService.Error(502)
+  }
+}
+
+let resultado: ResultadoWebService = llamadaWs()
+
+switch resultado {
+  case let .Exito(contenido):
+    print(contenido)
+  case let .Error(codigo):
+    print(&quot;El código de es es \(codigo)&quot;) //Imprime: &quot;El código de es es 502&quot;
+}
+</code></pre>
+
 <h3 id="diccionarios">Diccionarios</h3>
 
 <p>Diccionarios, mapas o colecciones asociativas</p>
 
-<pre><code class="language-swift">var  unDiccionario: [String:Int] = [:]
-var  diccionario = [&quot;llave1&quot;: 1, &quot;llave2&quot;: 2, &quot;llave3&quot;: 3]
+<pre><code class="language-swift">var unDiccionario: [String:Int] = [:]
+var diccionario = [&quot;llave1&quot;: 1, &quot;llave2&quot;: 2, &quot;llave3&quot;: 3]
 
 //Dentro de unValor se guarda el valor anterior de la llave
 //unValor es de tipo opcional
@@ -712,9 +882,9 @@ let unValor = diccionario.updateValue(4, forKey: &quot;llave2&quot;)
 diccionario[&quot;llave1&quot;] = 10
 
 //Si la llave no se encuentra, la va a crear
-diccionario  //Imprime:[&quot;llave1&quot;: 10, &quot;llave2&quot;: 4, &quot;llave3&quot;: 3]
+diccionario //Imprime:[&quot;llave1&quot;: 10, &quot;llave2&quot;: 4, &quot;llave3&quot;: 3]
 diccionario[&quot;llavee&quot;] = 10
-diccionario  //Imprime: [&quot;llave1&quot;: 10, &quot;llavee&quot;: 10, &quot;llave2&quot;: 4, &quot;llave3&quot;: 3]
+diccionario //Imprime: [&quot;llave1&quot;: 10, &quot;llavee&quot;: 10, &quot;llave2&quot;: 4, &quot;llave3&quot;: 3]
 </code></pre>
 
 <p>Diccionarios con llaves nulas</p>
@@ -723,13 +893,13 @@ diccionario  //Imprime: [&quot;llave1&quot;: 10, &quot;llavee&quot;: 10, &quot;l
 //No se recomienda borrar llaves de esta manera
 
 diccionario[&quot;llave3&quot;] = nil
-diccionario  //Imprime: [&quot;llave2&quot;: 4, &quot;llavee&quot;: 10, &quot;llave1&quot;: 10]
+diccionario //Imprime: [&quot;llave2&quot;: 4, &quot;llavee&quot;: 10, &quot;llave1&quot;: 10]
 
 //Si se quiere remover una llave, se recomienda removerla de esta manera:
 
 let llave2 = diccionario.removeValue(forKey:&quot;llave1&quot;)
 diccionario.removeValue(forKey:&quot;llave2&quot;)
-diccionario  // Imprime: [&quot;llavee&quot;: 10]
+diccionario // Imprime: [&quot;llavee&quot;: 10]
 </code></pre>
 
 <h3 id="conjuntos">Conjuntos</h3>
@@ -737,11 +907,10 @@ diccionario  // Imprime: [&quot;llavee&quot;: 10]
 <p>Declaración de conjuntos:</p>
 
 <pre><code class="language-swift">//colecciones no ordenadas
-
-var  amigos = Set&lt;String&gt;()
-var  amigos1: Set&lt;String&gt; = [] //Si se inicializa
-var  amigos2 = Set([&quot;Julieta&quot;, &quot;Violeta&quot;, &quot;Andres&quot;, &quot;Ernesto&quot;])
-var  amigos3: Set = [&quot;Fabian&quot;, &quot;Freddy&quot;, &quot;Andres&quot;, &quot;Ernesto&quot;]
+var amigos = Set&lt;String&gt;()
+var amigos1: Set&lt;String&gt; = [] //Si se inicializa
+var amigos2 = Set([&quot;Julieta&quot;, &quot;Violeta&quot;, &quot;Andres&quot;, &quot;Ernesto&quot;])
+var amigos3: Set = [&quot;Fabian&quot;, &quot;Freddy&quot;, &quot;Andres&quot;, &quot;Ernesto&quot;]
 </code></pre>
 
 <p>Algunas funciones con conjuntos:</p>
@@ -750,20 +919,19 @@ var  amigos3: Set = [&quot;Fabian&quot;, &quot;Freddy&quot;, &quot;Andres&quot;,
 amigos3.remove(&quot;Ernesto&quot;)
 //No acepta duplicados
 //Regresar una inserción falsa si se inserta un duplicado
+amigos3.insert(&quot;Julian&quot;) //Imprime: (inserted false, memberAfterInsert &quot;Julian&quot;)
 
-amigos3.insert(&quot;Julian&quot;)  //Imprime: (inserted false, memberAfterInsert &quot;Julian&quot;)
-
-let  estaVacio = amigos3.isEmpty  //Imprime: false
-let  estaAndres = amigos3.contains(&quot;Andres&quot;)  //Imprime: true
-let  numeroAmigos = amigos3.count  //Imprime: 4
+let estaVacio = amigos3.isEmpty //Imprime: false
+let estaAndres = amigos3.contains(&quot;Andres&quot;) //Imprime: true
+let numeroAmigos = amigos3.count //Imprime: 4
 
 //Intersecciones, diferencia de intersecciones y la union
 
-let  comunes = amigos2.intersection(amigos3)  //Imprime: {&quot;Andres&quot;}
-let  diferencias = amigos2.symmetricDifference(amigos3)  //Imprime: {&quot;Ernesto&quot;, &quot;Julieta&quot;, &quot;Fabian&quot;, &quot;Freddy&quot;, &quot;Julian&quot;, &quot;Violeta&quot;}
-let  todos = amigos2.union(amigos3)  //Imprime: {&quot;Freddy&quot;, &quot;Violeta&quot;, &quot;Fabian&quot;, &quot;Julieta&quot;, &quot;Julian&quot;, &quot;Ernesto&quot;, &quot;Andres&quot;}
-let  resta = amigos2.subtract(amigos3) //Imprime: ()
-let  resta2 = amigos2.subtracting(amigos3) //Imprime: {'Julieta', 'Violeta', 'Ernesto'}
+let comunes = amigos2.intersection(amigos3) //Imprime: {&quot;Andres&quot;}
+let diferencias = amigos2.symmetricDifference(amigos3) //Imprime: {&quot;Ernesto&quot;, &quot;Julieta&quot;, &quot;Fabian&quot;, &quot;Freddy&quot;, &quot;Julian&quot;, &quot;Violeta&quot;}
+let todos = amigos2.union(amigos3) //Imprime: {&quot;Freddy&quot;, &quot;Violeta&quot;, &quot;Fabian&quot;, &quot;Julieta&quot;, &quot;Julian&quot;, &quot;Ernesto&quot;, &quot;Andres&quot;}
+let resta = amigos2.subtract(amigos3) //Imprime: ()
+let resta2 = amigos2.subtracting(amigos3) //Imprime: {'Julieta', 'Violeta', 'Ernesto'}
 </code></pre>
 
 <p>Iterando conjuntos:</p>
@@ -775,6 +943,251 @@ let  resta2 = amigos2.subtracting(amigos3) //Imprime: {'Julieta', 'Violeta', 'Er
 <pre><code class="language-swift">for amigo in amigos3 {
   print(&quot;\(amigo) es mi amigo&quot;)
 }
+</code></pre>
+
+<h3 id="estructuras">Estructuras</h3>
+
+<p>Las estructuras no soportan herencia, si se habla de estructuras es porque estamos pasando copias.</p>
+
+<p>La declaración de una estructura:</p>
+
+<pre><code class="language-swift">struct Cuerpo {
+  var altura: Double = 0
+  var peso: Double = 0
+}
+</code></pre>
+
+<h3 id="clases">Clases</h3>
+
+<p>La declaración de una clase:</p>
+
+<pre><code class="language-swift">class Persona {
+  var cuerpo: Cuerpo = Cuerpo()
+}
+</code></pre>
+
+<p>Las clases tienen un inicializador en lugar de contructor:</p>
+
+<pre><code class="language-swift">var cuerpo = Cuerpo()
+cuerpo.altura = 1.85
+cuerpo.peso = 70
+
+//Se crea una copia para Juan no se hace referencia, en el caso de la estructura Cuerpo
+var juan = Persona()
+juan.cuerpo = cuerpo
+cuerpo.altura = 1.85
+cuerpo.peso = 70
+print(&quot;Juan es \(juan.cuerpo.altura) metros alto y pesa \(juan.cuerpo.peso)&quot;) //Imprime: &quot;Juan es 1.85 metros alto y pesa 70.0&quot;
+print(cuerpo) //Imprime: &quot;Cuerpo(altura: 1.85, peso: 70.0)&quot;
+</code></pre>
+
+<p>La herencia se declara con dos puntos:</p>
+
+<pre><code class="language-swift">//Empleado hereda de persona
+class Empleado: Persona {
+  var idEmpleado = 0
+}
+
+var empleado = Empleado()
+empleado.cuerpo = cuerpo
+empleado.idEmpleado = 2
+</code></pre>
+
+<h3 id="propiedades-almacenadas-y-calculadas">Propiedades almacenadas y calculadas</h3>
+
+<p>El valor de las propiedades calculadas no se guardan en memoria simplemente se calculan .</p>
+
+<pre><code class="language-swift">struct Cuerpo {
+  var altura: Double = 1.73 //propiedades con almacenamiento y valor por default
+  var peso: Double = 75
+}
+
+class Persona {
+  var cuerpo: Cuerpo1 = Cuerpo1()
+  var bmi: Double {
+    get {
+      return (cuerpo.peso/(cuerpo.altura * cuerpo.altura)) //propiedad calculada
+    }
+  }
+}
+
+var persona = Persona()
+persona.cuerpo = Cuerpo()
+print(&quot;El bmi de la persona es: \(persona.bmi)&quot;)
+</code></pre>
+
+<p>Las propiedades en las clases:</p>
+
+<pre><code class="language-swift">class Empresa {
+  var numeroEmpleados: Int = 0 {
+    willSet { //Monitoreando u observando si una propiedad cambia, se ejecutara antes de que yo cambie el valor de la propiedad
+      print(&quot;Tenemos \(numeroEmpleados) y vamos a tener \(newValue) empleado&quot;) // swift sintetiza e inclye newValue
+    }
+    didSet { //Depsues de que el cambio se hizo
+      print(&quot;Ahora tenemos \(numeroEmpleados) y teniamos \(oldValue) empleados&quot;) // el valor previo que se tenia
+    }
+  }
+}
+</code></pre>
+
+<h3 id="protocolos">Protocolos</h3>
+
+<p>Es el mismo concepto de la interfaz. Describe las firmas y las clases implementan el contrato que esta especificandose en este protocolo.</p>
+
+<p>Los protocolos también pueden heredar de otro protocolo.</p>
+
+<pre><code class="language-swift">protocol EventoType {
+  var titulo: String {get set}
+  var id: Int {get}
+  func creaNotificacionLocal()
+}
+
+class EventoCalendario: EventoType {
+  var titulo: String = &quot; &quot;
+  var id: Int = 0
+  func creaNotificacionLocal(){
+    //Algo aqui
+  }
+}
+
+//Herencia de protocolos
+protocol EventoEspecialType: EventoType {
+  var esEspecial: Bool {get}
+}
+</code></pre>
+
+<h3 id="closures">Closures</h3>
+
+<pre><code class="language-swift">let numbers = [2,1,31,3,56,42,14]
+
+func compareAscending(i: Int, j: Int) -&gt; Bool{
+  print(&quot;i: \(i) &lt; j: \(j)&quot;)
+  return i &lt; j
+}
+
+//Sorted es una funcion de orden superior
+//Las funciones también es un tipo de dato
+//Pueda pasar o devolver una funcion y esas se llaman de orden superior
+
+let sortedNumbers = numbers.sorted(by: compareAscending) //Sorted funciona a traves de una funcion, toma la funcion y los ordena
+
+//Funcion anonima
+let sortedNumberAnonima = numbers.sorted(by: {
+  (i: Int, j:Int) -&gt; Bool in
+  return i &lt; j
+})
+
+let mappedNumbers = numbers.map { // recibe una funcion
+  (i: Int) -&gt; Int in //se puede cambiar por string y retornar simplemante el &quot;valor&quot;
+  //return &quot;\(1*2)&quot;
+  return i * 3
+}
+mappedNumbers
+</code></pre>
+
+<pre><code class="language-swift">//Ejemplo de clouser
+typealias myFunction = (String) -&gt; () //se crea un aleas para hacer mas legible el código
+
+func reatPrint (times: Int) -&gt; myFunction { //De vuelve una funcion (La funcion devuelve void) Es una fabrica de funciones
+  func printer(text: String) { // retiene el valor de una variable que ya debio de ser destruida, esto es una operacion de cerradura
+    for _ in 1...times {
+      print(text)
+    }
+  }
+  return printer
+}
+
+let log = reatPrint(times: 5)
+let log2 = reatPrint(times: 2)
+log(&quot;Yeah&quot;)
+log2(&quot;Ok&quot;)
+</code></pre>
+
+<h3 id="genéricos">Genéricos</h3>
+
+<p>Los genéricos son funciones que reciben cualquier tipo de dato, según los datos que se le manden y dependiendo de la función.</p>
+
+<pre><code class="language-swift">//Va a trabajar con un tipo de dato llamado T, no necesariamente tiene que ser una letra
+func makePair&lt;T&gt;(x: T, y: T) -&gt; (T, T) {
+  return (x,y)
+}
+
+let firstPair = makePair(x: 1, y: 2)
+let secondPair = makePair(x: &quot;uno&quot;, y: &quot;dos&quot;)
+//El compilador en tiempo de compilacion, reemplaza T por el tipo de dato que le estoy mandando
+//se convierte en una especie de template
+</code></pre>
+
+<p>Con más de un atributo:</p>
+
+<pre><code class="language-swift">func makePairDifferent&lt;T,U&gt;(x: T, y: U) -&gt; (T, U) {
+  return (x,y)
+}
+
+let firstPairDifferent = makePairDifferent(x: 1, y: &quot;dos&quot;)
+</code></pre>
+
+<blockquote>
+<p>Se recomienda que siempre sea declaren las funciones de manera simple, las funciones entre más simples mejor. Solo si después se requiere pueden llegar a ser genéricas, pero de entrada siempre tienen que ser simples.</p>
+</blockquote>
+
+<h3 id="manejo-de-errores">Manejo de errores</h3>
+
+<p>La forma más sencilla de declarar una función que puede generar un error:</p>
+
+<pre><code class="language-swift">func miFuncion() throws {}
+</code></pre>
+
+<p>La palabra try no significa que comenzará un bloque, en su lugar significa que esa línea puede generar una excepción.</p>
+
+<pre><code class="language-swift">try miFuncion()
+</code></pre>
+
+<p>Se pueden colocar varios try dentro del bloque do</p>
+
+<pre><code class="language-swift">do {
+  try miFuncion()
+} catch {
+  print(error)
+}
+</code></pre>
+
+<p>Ejemplo de manejo de errores con Enums:</p>
+
+<pre><code class="language-swift">enum MiError: Error { //Los Enums pueden implementar protocolos
+  case Malo
+  case Peor
+  case MuchoPeor
+}
+
+func infalible(val: Int) -&gt; String {
+  return &quot;perfecto&quot;
+}
+
+func falible(error: Bool) throws -&gt; String {
+  if error {
+    throw MiError.Peor
+  }
+  return &quot;Casi perfecto&quot;
+}
+
+//En la lógica vemos que se puede manejar como switch
+
+do {
+  infalible(val: 2)
+  try falible(error: true)
+  print(&quot;Todo bien&quot;)
+} catch MiError.Malo {
+  print(&quot;Mal&quot;)
+} catch MiError.Peor {
+  print(&quot;Peor&quot;)
+} catch MiError.MuchoPeor{
+  print(&quot;Corraaaaan&quot;)
+}
+
+//try! falible(error: true) //Error en ejecucion
+//try falible(error: true) //Error en compilacion
+try? falible(error: true) //Como opcional
 </code></pre>
 
           </div>
