@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>/post/pragmatic-thinking/</loc>
+    <lastmod>2020-02-07T10:41:59-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/swift-intro/</loc>
     <lastmod>2019-10-20T21:45:28-05:00</lastmod>
   </url>
@@ -49,7 +54,7 @@
   
   <url>
     <loc>/series/books/</loc>
-    <lastmod>2019-09-24T21:44:42-05:00</lastmod>
+    <lastmod>2020-02-07T10:41:59-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -90,7 +95,7 @@
   
   <url>
     <loc>/series/</loc>
-    <lastmod>2019-09-24T21:44:42-05:00</lastmod>
+    <lastmod>2020-02-07T10:41:59-06:00</lastmod>
     <priority>0</priority>
   </url>
   

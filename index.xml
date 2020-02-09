@@ -61,6 +61,21 @@ Lo probaremos con estas cadenas para verificar si el programa funciona correctam
     </item>
     
     <item>
+      <title>Pragmatic Thinking &amp; Learning&#39;s Tips</title>
+      <link>/post/pragmatic-thinking/</link>
+      <pubDate>Fri, 07 Feb 2020 10:41:59 -0600</pubDate>
+      
+      <guid>/post/pragmatic-thinking/</guid>
+      <description>I collected tips and observations from the amazing book: Pragmatic Thinking &amp;amp; Learning written by Andy Hunt.
+ The essence of pragmatism is to do what works for you.
+As you grow and adapt you may need to modify your habits and approaches as well.
+ Tip 1  Always consider the context.  Everything is interconnected: the physical world, social systems, your innermost thoughts, the unrelenting logic of the computer—everything forms one immense, interconnected system of reality. Nothing exists in isolation; everything is part of the system and part of a larger context.
+Tip 2  Use rules for novices, intuition for experts.  The journey from novice to expert involves more than just rules and intuition,of course. Many characteristics change as you move up the skill levels. Takes about ten years to become an expertise. So you have to keep practising.
+Tip 3  Know what you don&amp;rsquo;t know.  If you&amp;rsquo;re lucky enough to have an expert on your team, you need to accommodate them.
+Tip 4  Learn by watching and imitating.  Fisrt you imitate existing practice and then slowly assimilate the tacit knowledge and experience over time. Finally you&amp;rsquo;ll be in a position to go beyond imitation and innovate.</description>
+    </item>
+    
+    <item>
       <title>Introducción a Swift</title>
       <link>/post/swift-intro/</link>
       <pubDate>Sun, 20 Oct 2019 21:45:28 -0500</pubDate>
