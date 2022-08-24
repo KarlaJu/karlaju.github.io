@@ -1,38 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Books on Karla Jurado</title>
+    <title>books on Ucasky</title>
     <link>/series/books/</link>
-    <description>Recent content in Books on Karla Jurado</description>
+    <description>Recent content in books on Ucasky</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Fri, 07 Feb 2020 10:41:59 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2019 21:44:42 -0500</lastBuildDate>
     
 	<atom:link href="/series/books/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Pragmatic Thinking &amp; Learning&#39;s Tips</title>
-      <link>/post/pragmatic-thinking/</link>
-      <pubDate>Fri, 07 Feb 2020 10:41:59 -0600</pubDate>
-      
-      <guid>/post/pragmatic-thinking/</guid>
-      <description>I collected tips and observations from the amazing book: Pragmatic Thinking &amp;amp; Learning written by Andy Hunt.
- The essence of pragmatism is to do what works for you.
-As you grow and adapt you may need to modify your habits and approaches as well.
- Tip 1  Always consider the context.  Everything is interconnected: the physical world, social systems, your innermost thoughts, the unrelenting logic of the computer—everything forms one immense, interconnected system of reality. Nothing exists in isolation; everything is part of the system and part of a larger context.
-Tip 2  Use rules for novices, intuition for experts.  The journey from novice to expert involves more than just rules and intuition,of course. Many characteristics change as you move up the skill levels. Takes about ten years to become an expertise. So you have to keep practising.
-Tip 3  Know what you don&amp;rsquo;t know.  If you&amp;rsquo;re lucky enough to have an expert on your team, you need to accommodate them.
-Tip 4  Learn by watching and imitating.  Fisrt you imitate existing practice and then slowly assimilate the tacit knowledge and experience over time. Finally you&amp;rsquo;ll be in a position to go beyond imitation and innovate.</description>
-    </item>
-    
-    <item>
       <title>Libros 2019</title>
-      <link>/post/libros/</link>
+      <link>/books/libros/</link>
       <pubDate>Tue, 24 Sep 2019 21:44:42 -0500</pubDate>
       
-      <guid>/post/libros/</guid>
-      <description>2019  Blade Runner ~ Philip K. Dick La noche del parque ~ Roberto Lizarraga Jiménez Romeo y Julieta ~ W. Shakespeare El bosque del cisne negro ~ David Mitchell El encuentro con lo desconocido ~ Emiliano Ortega Túneles ~ Rodereck Gordon &amp;amp; Brian Williams Profundidades ~ Rodereck Gordon &amp;amp; Brian Williams Burami y el rey rojo ~ Ricardo Riera La broma asesina ~ Alan Moore La torre oscura VII ~ Stephen King Kingdom come ~ Alex Ross Laurie ~ Stephen King Dunas ~ Frank Herbert Ese lugar existe ~ Ulises Paniagua El monte de las ánimas ~ G.A.P La botellita de cristal ~ H. P. Lovecraft EL dios de las orejas de perro ~ Frank La lámpara de Alhazred ~ H. P. Lovecraft Memoria ~ H. P. Lovecraft El loco ~ La sabiduría interior Número Trece ~ Montague Rhodes James El miserere ~ Gustavo Adolfo Bécquer El devorador de fantasmas ~ H. P. Lovecraft El cable nocturno ~ H. F. Arnold El espejo ~ Haruki Murakami Biología desconocida ~ Walter alejandro Lenkovich El sótano ~ Federico Domenella La biblioteca de babel ~ Jorge Luis Borges El devoto del mal ~ Clark Ashton Smith El último turno ~ Stephen King El sendero del mago ~ Deepak Chopra El caballero de la armadura oxidada ~ Robert Fisher El final de la historia ~ Clark Ashton Smith La abuela ~ Stephen King Las ruinas de ngranek ~ Esteban Dilo Ojos ~ Elena Rubio A la deriva ~ Horacio Quiroga El lobo ~ Guy de Maupassant La gallina degollada ~ Horacio Quiroga El capitán Kauffman ~ George Valencia El ghoul ~ Clark Ashton Smith No era yo ~ Walter Alejandro Lenkovich Psicosis ~ Alfred Hitchcock El lote n.</description>
+      <guid>/books/libros/</guid>
+      <description>2019   Blade Runner ~ Philip K. Dick La noche del parque ~ Roberto Lizarraga Jiménez Romeo y Julieta ~ W. Shakespeare El bosque del cisne negro ~ David Mitchell El encuentro con lo desconocido ~ Emiliano Ortega Túneles ~ Rodereck Gordon &amp;amp; Brian Williams Profundidades ~ Rodereck Gordon &amp;amp; Brian Williams Burami y el rey rojo ~ Ricardo Riera La broma asesina ~ Alan Moore La torre oscura VII ~ Stephen King Kingdom come ~ Alex Ross Laurie ~ Stephen King Dunas ~ Frank Herbert Ese lugar existe ~ Ulises Paniagua El monte de las ánimas ~ G.A.P La botellita de cristal ~ H. P. Lovecraft EL dios de las orejas de perro ~ Frank La lámpara de Alhazred ~ H. P. Lovecraft Memoria ~ H. P. Lovecraft El loco ~ La sabiduría interior Número Trece ~ Montague Rhodes James El miserere ~ Gustavo Adolfo Bécquer El devorador de fantasmas ~ H. P. Lovecraft El cable nocturno ~ H. F. Arnold El espejo ~ Haruki Murakami Biología desconocida ~ Walter alejandro Lenkovich El sótano ~ Federico Domenella La biblioteca de babel ~ Jorge Luis Borges El devoto del mal ~ Clark Ashton Smith El último turno ~ Stephen King El sendero del mago ~ Deepak Chopra El caballero de la armadura oxidada ~ Robert Fisher El final de la historia ~ Clark Ashton Smith La abuela ~ Stephen King Las ruinas de ngranek ~ Esteban Dilo Ojos ~ Elena Rubio A la deriva ~ Horacio Quiroga El lobo ~ Guy de Maupassant La gallina degollada ~ Horacio Quiroga El capitán Kauffman ~ George Valencia El ghoul ~ Clark Ashton Smith No era yo ~ Walter Alejandro Lenkovich Psicosis ~ Alfred Hitchcock El lote n.</description>
     </item>
     
   </channel>

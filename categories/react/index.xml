@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>React on Karla Jurado</title>
+    <title>React on Ucasky</title>
     <link>/categories/react/</link>
-    <description>Recent content in React on Karla Jurado</description>
+    <description>Recent content in React on Ucasky</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
     <lastBuildDate>Tue, 09 Apr 2019 21:32:07 -0500</lastBuildDate>
@@ -18,9 +18,8 @@
       
       <guid>/post/react-intro/</guid>
       <description>¿Qué es?  Biblioteca para construir interfaces web Es la vista en MVC Sigle Page Application Sólo se encarga de la interfaz  ¿Por qué? Hacer más fácil la creación de interfaces web usando javascript
-Ventajas  Miestras escribes código podrás ver tus cambios Utiliza virtual Dom para refrescar la parte en la memoria que cambio Tiene/utiliza componentes  Componentes  API reusable Crea etiquetas HTML para reutilizar Reusable HTML, CSS, Javascript  Instalación  Instalar node.js Generador de proyectos   $ npm install -g create-react-app   Creación de la aplicación react   $ create-reat-app my-app   Entrar a la carpeta del proyecto   $ cd my-app   Levantar el proyecto   $ npm start  En el punto número cuatro al entrar a la carpeta del proyecto, aparecerá la siguiente estructura de archivos:
-my-app
-   Descripción    README.md  Documentación del proyecto   package.json Archivo que contiene el nombre, la version, dependencias del proyecto, etc.   package.lock.json Archivo generado para guardar las versiones del proyecto, este archivo no se toca   .gitignore Para la utilización de git   node_modules Se instalan los entornos js que se utilizarán para el proyecto   public Donde se colocan los archivos HTML   --- index.</description>
+Ventajas  Miestras escribes código podrás ver tus cambios Utiliza virtual Dom para refrescar la parte en la memoria que cambio Tiene/utiliza componentes  Componentes  API reusable Crea etiquetas HTML para reutilizar Reusable HTML, CSS, Javascript  Instalación  Instalar node.js Generador de proyectos   $ npm install -g create-react-app  Creación de la aplicación react   $ create-reat-app my-app  Entrar a la carpeta del proyecto   $ cd my-app  Levantar el proyecto   $ npm start  En el punto número cuatro al entrar a la carpeta del proyecto, aparecerá la siguiente estructura de archivos:
+my-app</description>
     </item>
     
   </channel>

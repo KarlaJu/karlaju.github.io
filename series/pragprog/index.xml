@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pragprog on Ucasky</title>
+    <link>/series/pragprog/</link>
+    <description>Recent content in pragprog on Ucasky</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Tue, 23 Aug 2022 21:27:29 -0500</lastBuildDate>
+    
+	<atom:link href="/series/pragprog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pragmatic Programmer</title>
+      <link>/books/pragmatic-programmer/</link>
+      <pubDate>Tue, 23 Aug 2022 21:27:29 -0500</pubDate>
+      
+      <guid>/books/pragmatic-programmer/</guid>
+      <description>The Pragmatic Programmer Extract from the book of david Thomas and Andrew Hunt  Programming is about trying to make the future less painful. It&amp;rsquo;s about making things easier for our teammates. It&amp;rsquo;s about getting things wrong and being able to bounce back. It&amp;rsquo;s about forming good habits. It&amp;rsquo;s about understanding your toolset. Coding is just part of th worl of being a programmer. ~ [pragprom]
+  There is a unique dedication to learning and practicality that is both refreshing and intimidating ~ [pragprom]
+ The word pragmatic comes from the Latin pragmaticus -&amp;ldquo;skilled in business&amp;rdquo;-meaning &amp;ldquo;fit for use.&amp;rdquo;
+What Makes a Pragmatic Programmer?  Early adopter / fast adapter When given something new, you can grasp it quickly and integrate it with the rest of yoour knowledge. Inquisitive You tend to ask questions - how did you do that? Did you have problems with that library? What&amp;rsquo;s this quantum computing I&amp;rsquo;ve heard about? How are symbolic links implemented? Critical thinker You rarely take things as given without first getting the facts. &amp;ldquo;Because that&amp;rsquo;s the way it&amp;rsquo;s done&amp;rdquo;, you smell a challenge. Realistic You try to understand the underlying nature of each problem you face. This realism gives you a good feel for how difficult things are, and how long things will take.</description>
+    </item>
+    
+    <item>
+      <title>Pragmatic Thinking &amp; Learning&#39;s Tips</title>
+      <link>/books/pragmatic-thinking/</link>
+      <pubDate>Fri, 07 Feb 2020 10:41:59 -0600</pubDate>
+      
+      <guid>/books/pragmatic-thinking/</guid>
+      <description>I collected tips and observations from the amazing book: Pragmatic Thinking &amp;amp; Learning written by Andy Hunt. The essence of pragmatism is to do what works for you.
+  As you grow and adapt you may need to modify your habits and approaches as well.
+ Tip 1  Always consider the context.  Everything is interconnected: the physical world, social systems, your innermost thoughts, the unrelenting logic of the computer—everything forms one immense, interconnected system of reality. Nothing exists in isolation; everything is part of the system and part of a larger context.
+Tip 2  Use rules for novices, intuition for experts.  The journey from novice to expert involves more than just rules and intuition,of course. Many characteristics change as you move up the skill levels. Takes about ten years to become an expertise. So you have to keep practising.
+Tip 3  Know what you don&amp;rsquo;t know.  If you&amp;rsquo;re lucky enough to have an expert on your team, you need to accommodate them.
+Tip 4  Learn by watching and imitating.  Fisrt you imitate existing practice and then slowly assimilate the tacit knowledge and experience over time. Finally you&amp;rsquo;ll be in a position to go beyond imitation and innovate.</description>
+    </item>
+    
+  </channel>
+</rss>
